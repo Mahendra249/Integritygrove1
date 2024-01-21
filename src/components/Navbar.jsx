@@ -1,6 +1,6 @@
-import "./Navbar.css";
+
 import { Link } from "react-router-dom";
-import { LogoImage } from "../assets/imgs/HomePage";
+import { IoMdMenu } from "react-icons/io";
 export default function Navbar() {
   return (
     <nav className="navbar nav-crev navbar-expand-lg">
@@ -19,7 +19,7 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span className="icon-bar">
-            <i className="fas fa-bars" />
+            <IoMdMenu />
           </span>
         </button>
         <div
@@ -28,7 +28,7 @@ export default function Navbar() {
         >
           <ul className="navbar-nav">
             <li className="nav-item dropdown">
-              <Link className="nav-link" to={"/"}>
+              <Link className="nav-link hover-this hover-anim" to={"/"}>
                 <span className="rolling-text">Home</span>
               </Link>
             </li>
@@ -92,10 +92,10 @@ export default function Navbar() {
               <span className="pe-7s-search" />
             </button>
           </div>
-          <div className="search-icon">
+          {/* <div className="search-icon">
             <span className="pe-7s-search open-search" />
             <span className="pe-7s-close close-search" />
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

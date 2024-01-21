@@ -2,8 +2,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
 //========= order is important ===========//
-import "./index.css";
-import "./App.css";
+import "./styles/HomePage/HomePage.css";
 // ======== providers and hooks =========//
 import { BrowserRouter } from "react-router-dom";
 
