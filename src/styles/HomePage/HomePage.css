@@ -6023,7 +6023,7 @@ footer .bg-pattern {
   padding-left: 20px;
 }
 
-.page-header .caption .sub-title:after {
+/* .page-header .caption .sub-title:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -6035,7 +6035,7 @@ footer .bg-pattern {
   height: 5px;
   border-radius: 50%;
   background: #fff;
-}
+} */
 
 .page-header .explore {
   position: relative;

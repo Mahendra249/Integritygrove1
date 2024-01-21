@@ -1,29 +1,37 @@
-import { useState } from "react";
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 const ContactSection = () => {
+  const schema = yup.object().shape({
+    name: yup.string().required("Username is required"),
+    email: yup.string().email("Invalid email").required("Email is required"),
+    subject: yup.string().required("Subject is required"),
+    message: yup.string().required("Message is required"),
+  });
 
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   watch,
-  //   errors,
-  // } = useForm()
-  // const [message, setMessage] = useState();
-  // const onSubmit = (data) => {
-  //   console.log(data);
-  //   console.log(errors);
-  // }
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  const onSubmit = (data) => {
+    console.log(data);
+    // Handle form submission logic here
+  };
 
   return (
     <section className="contact-crev no-crev section-padding">
       <div className="contact-container">
-        <div className="container">
+        <div className="container ">
           <div className="row">
             <div className="col-lg-5">
-              <div className="sec-head md-mb80">
+              <div className="sec-head md-mb80 ">
                 <h6 className="sub-title wow fadeInUp">Get In Touch</h6>
                 <h2 className="fz-50 d-rotate wow">
-                  <span className="rotate-text">
+                  <span >
                     Let&apos;s make your brand brilliant!
                   </span>
                 </h2>
@@ -60,60 +68,78 @@ const ContactSection = () => {
             </div>
             <div className="col-lg-6 offset-lg-1 valign">
               <div className="full-width">
-                <form id="contact-form">
-                  <div className="messages"></div>
-                  <div className="controls row">
-                    <div className="col-lg-6">
-                      <div className="form-group mb-30">
-                        <input
-                          id="form_name"
-                          type="text"
-                          name="name"
-                          placeholder="Name"
-                          // ref={register({ required: "Username is required" })}
-                        />
-                      </div>
+                <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+                  {/* ... other form fields ... */}
+                  <div className="col-lg-12">
+                    <div className="form-group mb-30">
+                      <input
+                        id="form_name"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        {...register("name", { onBlur: true })}
+                      />
+                      {errors.name && (
+                        <span className="error-message">
+                          {errors.name.message}
+                        </span>
+                      )}
                     </div>
-                    <div className="col-lg-6">
-                      <div className="form-group mb-30">
-                        <input
-                          id="form_email"
-                          type="email"
-                          name="email"
-                          placeholder="Email"
-                          // ref={register({ required: "Email is required" })}
-                        />
-                      </div>
+                  </div>
+                  <div className="col-lg-12">
+                    <div className="form-group mb-30">
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        {...register("email", { onBlur: true })}
+                      />
+                      {errors.email && (
+                        <span className="error-message">
+                          {errors.email.message}
+                        </span>
+                      )}
                     </div>
-                    <div className="col-12">
-                      <div className="form-group mb-30">
-                        <input
-                          id="form_subject"
-                          type="text"
-                          name="subject"
-                          placeholder="Subject"
-                          // ref={register({ required: "Subject is required" })}
-                        />
-                      </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="form-group mb-30">
+                      <input
+                        id="form_subject"
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        {...register("subject", { onBlur: true })}
+                      />
+                      {errors.subject && (
+                        <span className="error-message">
+                          {errors.subject.message}
+                        </span>
+                      )}
                     </div>
-                    <div className="col-12">
-                      <div className="form-group">
-                        <textarea
-                          id="form_message"
-                          name="message"
-                          placeholder="Message"
-                          rows="4"
-                          // ref={register({ required: "Message is required" })}
-                        ></textarea>
-                      </div>
-                      <div className="mt-30">
-                        <button
-                          type="submit"
-                          className="butn butn-full butn-bord radius-30"
-                        >
-                          <span className="text">Let's Talk</span>
-                        </button>
-                      </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="form-group">
+                      <textarea
+                        id="form_message"
+                        name="message"
+                        placeholder="Message"
+                        rows="4"
+                        {...register("message", { onBlur: true })}
+                      ></textarea>
+                      {errors.message && (
+                        <span className="error-message">
+                          {errors.message.message}
+                        </span>
+                      )}
+                    </div>
+                    <div className="mt-30">
+                      <button
+                        type="submit"
+                        className="butn butn-full butn-bord radius-30"
+                      >
+                        <span className="text">Let's Talk</span>
+                      </button>
                     </div>
                   </div>
                 </form>
