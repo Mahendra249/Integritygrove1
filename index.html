@@ -83,7 +83,65 @@
     </script> -->
 
     <!-- main.jsx file -->
+    <script>
+      (function () {
+        const link = document.querySelectorAll(".hover-this");
+        const cursor = document.querySelector(".cursor");
+        const animateit = function (e) {
+          const hoverAnim = this.querySelector(".hover-anim");
+          const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+            move = 25,
+            xMove = (x / width) * (move * 2) - move,
+            yMove = (y / height) * (move * 2) - move;
+          hoverAnim.style.transform = `translate(${xMove}px, ${yMove}px)`;
+          if (e.type === "mouseleave") hoverAnim.style.transform = "";
+        };
+        const editCursor = (e) => {
+          const { clientX: x, clientY: y } = e;
+          cursor.style.left = x + "px";
+          cursor.style.top = y + "px";
+        };
+        link.forEach((b) => b.addEventListener("mousemove", animateit));
+        link.forEach((b) => b.addEventListener("mouseleave", animateit));
+        window.addEventListener("mousemove", editCursor);
+
+        $("a, .cursor-pointer").hover(
+          function () {
+            $(".cursor").addClass("cursor-active");
+          },
+          function () {
+            $(".cursor").removeClass("cursor-active");
+          }
+        );
+
+        let elements = document.querySelectorAll(".rolling-text");
+
+        elements.forEach((element) => {
+          let innerText = element.innerText;
+          element.innerHTML = "";
+
+          let textContainer = document.createElement("div");
+          textContainer.classList.add("block");
+
+          for (let letter of innerText) {
+            let span = document.createElement("span");
+            span.innerText = letter.trim() === "" ? "\xa0" : letter;
+            span.classList.add("letter");
+            textContainer.appendChild(span);
+          }
+
+          element.appendChild(textContainer);
+          element.appendChild(textContainer.cloneNode(true));
+        });
+
+        elements.forEach((element) => {
+          element.addEventListener("mouseover", () => {
+            element.classList.remove("play");
+          });
+        });
+      })();
+    </script>
     <script type="module" src="/src/main.jsx" defer></script>
-    <script src="./JS/script.js" defer type="text/javascript"></script>
   </body>
 </html>
