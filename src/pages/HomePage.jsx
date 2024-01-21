@@ -1,6 +1,5 @@
 import { useEffect, lazy, Suspense } from "react";
 import { useLocation } from "react-router-dom";
-import Loader from "@/components/Loader";
 
 const IntroSlider = lazy(() => import("../components/HomePage/IntroSlider"));
 const Pricing = lazy(() => import("../components/landingPage/Pricing"));
@@ -38,7 +37,6 @@ export default function HomePage() {
 
   return (
     <main className="main-bg">
-      <Suspense fallback={<Loader />}>
         <IntroSlider />
         <Services />
         <Pricing />
@@ -46,7 +44,6 @@ export default function HomePage() {
         <Testimonials />
         <FAQ />
         <ContactSection />
-      </Suspense>
     </main>
   );
 }
