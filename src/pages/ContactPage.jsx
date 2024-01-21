@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 
 // Lazy-loaded ContactSection component
 const ContactSection = lazy(() =>

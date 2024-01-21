@@ -1,5 +1,3 @@
-import React from "react";
-import "./landingCss/Projects.css";
 import {
   Logo1,
   Logo2,
@@ -80,7 +78,7 @@ const generateBrandItems = () => {
 
 const TechStack = () => (
   <div className="clients section-padding pb-100 position-re">
-    <div className="heading-tech-stack">
+    <div className="heading-tech-stack text-center mb-4 ">
       <h4>TECH STACK</h4>
     </div>
     <div className="container">

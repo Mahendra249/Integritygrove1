@@ -1,6 +1,11 @@
-import LeftProjects from '@/components/Portfolio/LeftProjects'
-import RightProjects from '@/components/Portfolio/RightProjects'
-import ProjectDesc from '@/components/Portfolio/ProjectDesc'
+import { lazy } from "react";
+
+// Lazy-loaded components
+const LeftProjects = lazy(() => import("@/components/Portfolio/LeftProjects"));
+const RightProjects = lazy(() =>
+  import("@/components/Portfolio/RightProjects")
+);
+const ProjectDesc = lazy(() => import("@/components/Portfolio/ProjectDesc"));
 
 function ProjectPage() {
   return (
@@ -9,7 +14,7 @@ function ProjectPage() {
       <LeftProjects />
       <RightProjects />
     </>
-  )
+  );
 }
 
-export default ProjectPage
+export default ProjectPage;

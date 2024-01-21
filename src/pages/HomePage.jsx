@@ -1,4 +1,4 @@
-import { useEffect, lazy, Suspense } from "react";
+import { useEffect, lazy } from "react";
 import { useLocation } from "react-router-dom";
 
 const IntroSlider = lazy(() => import("../components/HomePage/IntroSlider"));
