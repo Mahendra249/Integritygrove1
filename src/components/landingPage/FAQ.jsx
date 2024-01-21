@@ -3,13 +3,13 @@ import React from 'react'
 function FAQ() {
   return (
     <>
-      <header className="page-header section-padding pb-0" style={{translate: 'none', rotate: 'none', scale: 'none', transform: 'translate(0px, 0px)'}}>
+      <header className="page-header  text-center section-padding pb-0" style={{translate: 'none', rotate: 'none', scale: 'none', transform: 'translate(0px, 0px)'}}>
         <div className="container mt-80" style={{translate: 'none', rotate: 'none', scale: 'none', opacity: 1, transform: 'translate(0px, 0px)'}}>
           <div className="row">
-            <div className="col-lg-9">
+            <div className="col-lg-12">
               <div className="caption">
                 <h6 className="sub-title">Need to ask something?</h6>
-                <h1 className="fz-55">Frequently Asked Questions</h1>
+                <h1 className="fz-55 text-center">Frequently Asked Questions</h1>
               </div>
               <div className="row">
                 <div className="col-lg-11 offset-lg-1">
@@ -24,46 +24,9 @@ function FAQ() {
             </div>
           </div>
         </div>
-        {/* <div className="main-marq xlrg section-padding pb-0">
-          <div className="slide-har st1">
-            <div className="box">
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-            </div>
-            <div className="box">
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-              <div className="item">
-                <h4>FAQS</h4>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        
       </header>
-      <section className="faqs section-padding main-bg">
+      <section className="faqs section-padding main-bg " style={{marginTop:"-64px"}}>
         <div className="container">
           <div className="row lg-marg">
             <div className="col-lg-6 md-mb50">

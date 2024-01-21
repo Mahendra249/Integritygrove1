@@ -242,13 +242,7 @@
 --------------------------------  Fade Header   --------------------------------
 ============================================================================= */
 
-      $(window).scroll(function () {
-        var scrolled = $(this).scrollTop();
-        $(".fixed-slider .caption , .fixed-slider .capt .parlx").css({
-          transform: "translate3d(0, " + -(scrolled * 0.2) + "px, 0)",
-          opacity: 1 - scrolled / 600,
-        });
-      });
+
     </script>
     <script type="module" src="/src/main.jsx" defer></script>
   </body>
