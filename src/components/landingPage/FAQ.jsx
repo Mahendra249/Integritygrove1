@@ -24,7 +24,7 @@ function FAQ() {
             </div>
           </div>
         </div>
-        <div className="main-marq xlrg section-padding pb-0">
+        {/* <div className="main-marq xlrg section-padding pb-0">
           <div className="slide-har st1">
             <div className="box">
               <div className="item">
@@ -61,7 +61,7 @@ function FAQ() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </header>
       <section className="faqs section-padding main-bg">
         <div className="container">
