@@ -2,6 +2,8 @@ import { useEffect, lazy, Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
+import BlogPage from "./pages/BlogPage";
+import BlogDetails from "./pages/BlogDetails";
 
 const HomeLayout = lazy(() => import("./layout/HomeLayout"));
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -46,7 +48,9 @@ function App() {
           <Route path="/portfolio" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/ourteam" element={<OurTeamPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          {/* <Route path="/contact" element={<ContactPage />} /> */}
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blogdetails" element={<BlogDetails />} />
           <Route path="/service" element={<ServicePage />} />
         </Route>
       </Routes>
