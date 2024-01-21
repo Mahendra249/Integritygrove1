@@ -6,7 +6,7 @@ export default function HomeLayout() {
     <>
       <Navbar />
       <Outlet />
-      <Footer/>
+      <Footer />
     </>
   );
 }

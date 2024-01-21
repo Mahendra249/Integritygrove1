@@ -37,13 +37,13 @@ export default function HomePage() {
 
   return (
     <main className="main-bg">
-        <IntroSlider />
-        <Services />
-        <Pricing />
-        <Projects />
-        <Testimonials />
-        <FAQ />
-        <ContactSection />
+      <IntroSlider />
+      <Services />
+      <Pricing />
+      <Projects />
+      <Testimonials />
+      <FAQ />
+      <ContactSection />
     </main>
   );
 }
