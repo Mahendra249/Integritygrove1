@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
 //========= order is important ===========//
-import "./styles/HomePage/HomePage.css";
+// import "./styles/HomePage/HomePage.css";
 import "./index.css";
 import "./App.css";
 // ======== providers and hooks =========//
