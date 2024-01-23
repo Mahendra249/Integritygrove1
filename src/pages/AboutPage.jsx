@@ -7,9 +7,8 @@ const AboutPage = () => {
   return (
     <div>
       {/* ....................header................................. */}
-
       <header
-        className="page-header section-padding pb-0"
+        className="page-header section-padding pb-15"
         style={{
           translate: "none",
           rotate: "none",
@@ -49,7 +48,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="main-marq xlrg section-padding pb-0">
+        {/* <div className="main-marq xlrg section-padding pb-0">
           <div className="slide-har st1">
             <div className="box">
               <div className="item">
@@ -86,36 +85,37 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </header>
 
       {/* ***************** About Section******************************* */}
 
       <section className="pg-about section-padding sub-bg">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-4">
+          <div className="row" style={{alignItems:"center",justifyContent:"center"}}>
+            <div className="col-lg-12">
               <div
                 className="bg-img radius-10 md-mb50"
                 data-background={aboutImg1}
                 style={{ backgroundImage: `url(${aboutImg1})` }}
               />
             </div>
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div
                 className="bg-img radius-10"
                 data-background={aboutImg2}
                 style={{ backgroundImage: `url(${aboutImg2})` }}
               />
             </div>
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div className="sec-head mt-80">
                 <h6 className="sub-title">Our Story.</h6>
               </div>
-            </div>
-            <div className="col-lg-8">
-              <div className="cont mt-80">
-                <h4>
+            </div> */}
+            <div className="col-lg-12">
+              <div className="cont ">
+                <h1 className="text-center">About</h1>
+                <h4 className="text-center">
                   GeekFolio are digital marketing experts and can partner with
                   you to implement tactical campaigns which engage and connect
                   audiences whilst driving ROI for your brand. We are SEO and
@@ -212,7 +212,7 @@ const AboutPage = () => {
 
       {/* ==================== Start about ==================== */}
 
-      <section className="intro-corp section-padding pt-0">
+      {/* <section className="intro-corp section-padding pt-0">
         <div className="container">
           <div className="row justify-content-around">
             <div className="col-lg-5 valign md-mb50">
@@ -323,7 +323,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ==================== Start Testimonials ==================== */}
 
