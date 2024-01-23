@@ -1,6 +1,9 @@
 import { icon1 } from "../../assets/imgs/HomePage";
 import { icon2 } from "../../assets/imgs/HomePage";
 import { icon3 } from "../../assets/imgs/HomePage";
+import {lottifile1,lottifile2,lottifile3,lottifile4} from "../../assets/imgs/HomePage/index"
+
+import ServicesCard from "./ServicesCard";
 
 function Services() {
   return (
@@ -18,8 +21,7 @@ function Services() {
               <div className="col-lg-4 d-flex align-items-center">
                 <div className="text">
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit,
-                    sed quia.
+                  
                   </p>
                 </div>
               </div>
@@ -27,46 +29,13 @@ function Services() {
           </div>
           <div className="row">
             <div className="col-lg-4">
-              <div className="serv-item md-mb50 radius-10">
-                <div className="icon-img-60 mb-40">
-                  <img loading="lazy" src={icon1} alt="" />
-                </div>
-                <h5 className="mb-30 pb-30 bord-thin-bottom">
-                  Brand Strategy &amp; <br /> Art Direction
-                </h5>
-                <p>
-                  Creating a higher spacing and how people move through a
-                  unique.
-                </p>
-              </div>
+              <ServicesCard title="Android Development" item={icon1} Lottieimg={lottifile2} description="Creating a higher spacing and how people move through a unique."/>
             </div>
             <div className="col-lg-4">
-              <div className="serv-item md-mb50 radius-10">
-                <div className="icon-img-60 mb-40">
-                  <img loading="lazy" src={icon2} alt="" />
-                </div>
-                <h5 className="mb-30 pb-30 bord-thin-bottom">
-                  UX/UI Design &amp; <br /> Website/App Design
-                </h5>
-                <p>
-                  Creating a higher spacing and how people move through a
-                  unique.
-                </p>
-              </div>
+              <ServicesCard title=" Web-app Development" item={icon2} Lottieimg={lottifile3} description="Creating a higher spacing and how people move through a unique." />
             </div>
             <div className="col-lg-4">
-              <div className="serv-item radius-10">
-                <div className="icon-img-60 mb-40">
-                  <img loading="lazy" src={icon3} alt="" />
-                </div>
-                <h5 className="mb-30 pb-30 bord-thin-bottom">
-                  Typography &amp; <br /> Video Production
-                </h5>
-                <p>
-                  Creating a higher spacing and how people move through a
-                  unique.
-                </p>
-              </div>
+              <ServicesCard title="Ecommerce Web Development" item={icon3} Lottieimg={lottifile1} description="Creating a higher spacing and how people move through a unique." />
             </div>
           </div>
         </div>
