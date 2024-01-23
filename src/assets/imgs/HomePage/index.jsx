@@ -37,7 +37,12 @@ import Logo12 from "./Logos/sql.png";
 import Logo13 from "./Logos/unittesting.png";
 import StarCircle from "./svg-assets/circle-star.png";
 import Bg1 from "./background/4.jpg";
-import BackgroundImage from "./background/background124.jpg"
+import BackgroundImage from "../HomePage/background/pricrcard1.jpg.jpg"
+import lottifile1 from "../HomePage/Lottie/android.json"
+import lottifile2 from "../HomePage/Lottie/app1.json"
+import lottifile3 from "../HomePage/Lottie/web.json"
+import lottifile4 from "../HomePage/Lottie/webb.json"
+
 export {
   LogoImage,
   HomeSliderBackground,
@@ -76,5 +81,9 @@ export {
   Project5,
   StarCircle,
   Bg1,
-  BackgroundImage
+  BackgroundImage,
+  lottifile1,
+  lottifile2,
+  lottifile3,
+  lottifile4
 };
