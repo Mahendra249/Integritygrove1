@@ -22,19 +22,36 @@ import Project2 from "./freelancer/works/2.jpg";
 import Project3 from "./freelancer/works/3.jpg";
 import Project4 from "./freelancer/works/4.jpg";
 import Project5 from "./freelancer/works/5.jpg";
-import Logo1 from "./Logos/git.png";
-import Logo2 from "./Logos/typescript.png";
-import Logo3 from "./Logos/jsvanilla.jpg";
-import Logo4 from "./Logos/react-logo.png";
-import Logo5 from "./Logos/nodejs.png";
-import Logo6 from "./Logos/python.png";
-import Logo7 from "./Logos/api.png";
-import Logo8 from "./Logos/Next.png";
-import Logo9 from "./Logos/firebase.png";
-import Logo10 from "./Logos/c-logo.png";
-import Logo11 from "./Logos/c-program-icon.png";
-import Logo12 from "./Logos/sql.png";
-import Logo13 from "./Logos/unittesting.png";
+import Tech1 from "./freelancer/skills/angular.png";
+import Tech2 from "./freelancer/skills/figma.png";
+import Tech3 from "./freelancer/skills/webflow.png";
+import Tech4 from "./freelancer/skills/wordpress.png";
+import Tech5 from "./freelancer/skills/Flutter.png";
+import Tech6 from "./freelancer/skills/react.png";
+import Tech7 from "./freelancer/skills/nodejs.png";
+import Tech8 from "./freelancer/skills/git.png";
+import Tech9 from "./freelancer/skills/python.png";
+import Tech10 from "./freelancer/skills/nextjs-icon.png";
+import Tech11 from "./freelancer/skills/sql.png";
+import Tech12 from "./freelancer/skills/mysql.png";
+import Tech13 from "./freelancer/skills/RUBY.png";
+import Tech14 from "./freelancer/skills/three-js-icon.png";
+import Tech15 from "./freelancer/skills/vue-js-icon.png";
+import Tech16 from "./freelancer/skills/dotnet-icon.png";
+import Tech17 from "./freelancer/skills/mongodb.png";
+import Tech18 from "./freelancer/skills/magento-icon.png";
+import Tech19 from "./freelancer/skills/sql-server-icon.png";
+import Tech20 from "./freelancer/skills/joomla.png";
+import Tech21 from "./freelancer/skills/js.png";
+import Tech23 from "./freelancer/skills/laravel-icon.png";
+import Tech24 from "./freelancer/skills/html.png";
+import Tech25 from "./freelancer/skills/css.png";
+import Tech26 from "./freelancer/skills/drupal.png";
+import Tech27 from "./freelancer/skills/CS.png";
+import Tech28 from "./freelancer/skills/django-icon.png";
+import Tech29 from "./freelancer/skills/expree-icon.png";
+import Tech30 from "./freelancer/skills/apache.png";
+import Tech31 from "./freelancer/skills/java.png";
 import StarCircle from "./svg-assets/circle-star.png";
 import Bg1 from "./background/4.jpg";
 import BackgroundImage from "../HomePage/background/pricrcard1.jpg.jpg"
@@ -61,19 +78,36 @@ export {
   Pic2,
   Pic3,
   Pic4,
-  Logo1,
-  Logo2,
-  Logo3,
-  Logo4,
-  Logo5,
-  Logo6,
-  Logo7,
-  Logo8,
-  Logo9,
-  Logo10,
-  Logo11,
-  Logo12,
-  Logo13,
+  Tech1,
+  Tech2,
+  Tech3,
+  Tech4,
+  Tech5,
+  Tech6,
+  Tech7,
+  Tech8,
+  Tech9,
+  Tech10,
+  Tech11,
+  Tech12,
+  Tech13,
+  Tech14,
+  Tech15,
+  Tech16,
+  Tech17,
+  Tech18,
+  Tech19,
+  Tech20,
+  Tech21,
+  Tech23,
+  Tech24,
+  Tech25,
+  Tech26,
+  Tech27,
+  Tech28,
+  Tech29,
+  Tech30,
+  Tech31,
   Project1,
   Project2,
   Project3,
@@ -85,5 +119,5 @@ export {
   lottifile1,
   lottifile2,
   lottifile3,
-  lottifile4
+  lottifile4,
 };

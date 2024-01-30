@@ -33,7 +33,10 @@ function Footer() {
                   <h6>Address</h6>
                 </div>
                 <div className="text">
-                  <p>Gourav Vihar-B kesar Circle Sanganer</p>
+                  <p>
+                    21, Om vihar 2, shri ram ki nangal, goner mode, jaipur,
+                    Rajastha, 302022
+                  </p>
                 </div>
               </div>
             </div>
@@ -44,7 +47,7 @@ function Footer() {
                 </div>
                 <div className="text">
                   <p className="mb-10">
-                    <Link href="#0">hello@design.com</Link>
+                    <Link href="#0">info.jayeshvijay@gmail.com</Link>
                   </p>
                   <h5>
                     <Link href="#">+91 (844) 205 6834</Link>
@@ -58,7 +61,7 @@ function Footer() {
               </div>
               <ul className="rest social-text">
                 <li>
-                  <Link href="#0">Facebook</Link>
+                  <Link href="">Facebook</Link>
                 </li>
                 <li>
                   <Link href="#0">Twitter</Link>
@@ -67,7 +70,7 @@ function Footer() {
                   <Link href="#0">LinkedIn</Link>
                 </li>
                 <li>
-                  <Link href="#0">Instagram</Link>
+                  <Link href="www.instagram.com/_jayesh_0786/ ">Instagram</Link>
                 </li>
               </ul>
             </div>
@@ -94,23 +97,19 @@ function Footer() {
               <div className="col-lg-4">
                 <div className="logo">
                   <Link href="#">
-                    <img
-                      loading="lazy"
-                      src="assets/imgs/logo-light.png"
-                      alt=""
-                    />
+                    <img src="assets/imgs/logo-light.png" alt="" />
                   </Link>
                 </div>
               </div>
               <div className="col-lg-8">
                 <div className="copyright d-flex">
                   <div className="ml-auto">
-                    <p className="fz-13">
+                    {/* <p className="fz-13">
                       © 2023 IG Tech is Proudly Powered by{" "}
                       <span className="underline">
                         <Link to={"#"}>Ui-ThemeZ</Link>
                       </span>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

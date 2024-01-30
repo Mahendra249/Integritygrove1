@@ -22,9 +22,7 @@
     transition: 0.8s;
 
   padding: 40px;
-  img {
-   
-  }
+ 
 }
 
 .card:hover{
@@ -79,12 +77,10 @@
 .card-title {
   font-weight: 600;
   color: white;
-  letter-spacing: -0.02em;
-  line-height: 40px;
-  font-style: normal;
-  font-size: 26px;
+  line-height: 10px;
+  font-size: 22px;
   padding-bottom: 8px;
-    transition: 1s ;
+  transition: 1s ;
 
 }
 

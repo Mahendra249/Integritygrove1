@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
 import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
+import ErrorPage from "./components/ErrorPages/ErrorPage";
+import Connection from "./components/ErrorPages/Connection";
 
 const HomeLayout = lazy(() => import("./layout/HomeLayout"));
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -52,6 +54,8 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blogdetails" element={<BlogDetails />} />
           <Route path="/service" element={<ServicePage />} />
+          <Route path="/error" element={<ErrorPage />} />
+          <Route path="/connection" element={<Connection />} />
         </Route>
       </Routes>
     </Suspense>

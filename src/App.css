@@ -1,0 +1,139 @@
+#section-id-main {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.main-container-tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main-child-part {
+  background-color: #0f0f0fac;
+
+  margin-inline-start: 20px;
+  margin-top: 20px;
+  border-radius:12px;
+  padding: 35px 60px;
+  transition: 0.4s;
+}
+.main-child-part img {
+  height: 70px; 
+  width: 80px;
+  filter: drop-shadow(2px 2px 1px rgba(97, 83, 83, 0.823));
+  transition: 1s;
+}
+
+.main-child-part img:hover {
+  /* transform: scale(2); */
+  /* transform: translateZ(12px ); */
+  /* transform: translate3d(42px, -62px, -135px); */
+  transform: rotateY(45deg);
+}
+.main-container-parent {
+  display: flex;
+
+}
+
+.service-page-container {
+  display: flex;
+  flex-direction: column;
+  padding:  0px 15vmax;
+  
+}
+
+.service-content {
+  text-align: center;
+  color: white;
+}
+
+.service-heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.938);
+
+}
+
+.service-icon {
+  margin-right: 10px;
+}
+.service-heading-part-1 {
+  margin-inline-start: 10px;
+  color: rgba(255, 255, 255, 0.557);
+  font-size: 2.5rem;
+}
+
+.service-paragraph {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 35px;
+  margin-inline-start: 10px;
+}
+.lottifiles{
+  margin-top: 50px;
+  height: 350px;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .service-page-container {
+    flex-direction: row;
+  }
+
+  .service-content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+ 
+}
+@media (max-width: 1800px) {
+  .service-heading-part-1 {
+    font-size: 2.5rem;
+  }
+  .service-paragraph {
+    font-size: 15px;
+  }
+  .lottifiles{
+    height: 350px;
+  }
+}
+@media (max-width: 1350px) {
+  .service-heading-part-1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .lottifiles{
+    height: 300px;
+  }
+ 
+}
+@media (max-width: 1200px) {
+  .lottifiles{
+  margin-top: 75px;
+  height: 220px;
+}
+
+}
+@media (max-width: 1100px) {
+  .lottifiles{
+  margin-top: 100px;
+  height: 280px;
+}
+}
+@media (min-width: 200px) and (max-width:980px) {
+  .lottifiles{
+    display: none;
+}
+.service-paragraph {
+  text-align: center;
+}
+
+}

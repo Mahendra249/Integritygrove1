@@ -35,7 +35,7 @@ function Services() {
               <ServicesCard title=" Web-app Development" item={icon2} Lottieimg={lottifile3} description="Creating a higher spacing and how people move through a unique." />
             </div>
             <div className="col-lg-4">
-              <ServicesCard title="Ecommerce Web Development" item={icon3} Lottieimg={lottifile1} description="Creating a higher spacing and how people move through a unique." />
+              <ServicesCard title="Ecommerce Development" item={icon3} Lottieimg={lottifile1} description="Creating a higher spacing and how people move through a unique." />
             </div>
           </div>
         </div>
