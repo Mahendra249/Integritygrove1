@@ -7,6 +7,7 @@ import BlogDetails from "./pages/BlogDetails";
 import ErrorPage from "./components/ErrorPages/ErrorPage";
 import Connection from "./components/ErrorPages/Connection";
 
+
 const HomeLayout = lazy(() => import("./layout/HomeLayout"));
 const HomePage = lazy(() => import("./pages/HomePage"));
 const OurTeamPage = lazy(() => import("./pages/OurTeamPage"));
@@ -14,6 +15,7 @@ const ProjectPage = lazy(() => import("./pages/PortfolioPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const ServicePage = lazy(() => import("./pages/ServicePage"));
+const HirePage =lazy(()=> import("./pages/HirePage"));
 
 function App() {
   const { pathname, search } = useLocation();
@@ -55,6 +57,7 @@ function App() {
           <Route path="/blogdetails" element={<BlogDetails />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/error" element={<ErrorPage />} />
+          <Route path="/Hire" element={<HirePage />} />
           <Route path="/connection" element={<Connection />} />
         </Route>
       </Routes>

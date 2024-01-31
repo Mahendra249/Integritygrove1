@@ -63,12 +63,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link" to={"service"}>
+              <Link className="nav-link" to={"/service"}>
                 <span className="rolling-text">Services</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={""}>
+              <Link className="nav-link" to={"/Hire"}>
                 <span className="rolling-text">Hire</span>
               </Link>
             </li>
