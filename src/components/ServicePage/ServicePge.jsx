@@ -16,7 +16,7 @@ const ServicePge = () => {
   };
 
   return (
-    <div className="service-page-container">
+    <div className="service-page-container" >
       <div className="service-content">
         <h2 className="service-heading ">
           <span className="service-icon">

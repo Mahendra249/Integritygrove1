@@ -3060,18 +3060,29 @@ body.loaded {
   padding: 0;
   margin: 0;
   width: 100%;
-  background: transparent;
   border-bottom: 2px solid transparent;
   z-index: 999;
 }
+/* .bg-Nav-box::before {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
+  transition: 1s ;
+  background: linear-gradient(71deg, #394f4f2a, #3da07749, #0d12122c);
 
+} */
 .navbar.nav-crev {
   width: calc(100% - 47px);
   left: 25px;
   top: 30px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
+  border-radius: 4px;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   min-height: auto;
@@ -3079,6 +3090,7 @@ body.loaded {
   -ms-transform: translate(0) !important;
   transform: translate(0) !important;
 }
+
 
 .navbar.nav-crev.nav-scroll {
   background: #1d1d1d;

@@ -44,8 +44,11 @@
 }
 
 .service-content {
-  text-align: center;
   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .service-heading {
@@ -107,7 +110,7 @@
 }
 @media (max-width: 1350px) {
   .service-heading-part-1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .lottifiles{
@@ -134,6 +137,9 @@
 }
 .service-paragraph {
   text-align: center;
+}
+.service-page-container {
+  padding:  0px 11vmax;  
 }
 
 }
