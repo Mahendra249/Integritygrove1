@@ -6,7 +6,7 @@
   margin-inline: auto;
   background-color: transparent;
   margin-bottom: 3rem;
-  transition: 0.5s ;
+  transition: 0.8s ;
   transform: perspective(900px) rotateY(0deg);
 }
 
@@ -26,7 +26,8 @@
 }
 
 .card:hover{
-     transform: perspective(800px) rotateY(10deg);
+     transform: perspective(800px) rotateX(-10deg);
+
      .container-card img{
         filter: drop-shadow(1px 1px 1px rgb(59, 255, 174));
     }
@@ -77,8 +78,10 @@
 .card-title {
   font-weight: 600;
   color: white;
-  line-height: 10px;
-  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 26px;
   padding-bottom: 8px;
   transition: 1s ;
 

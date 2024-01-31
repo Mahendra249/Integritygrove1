@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 export default function Navbar() {
   return (
-    <nav className="navbar nav-crev navbar-expand-lg ">
+    <nav className="navbar nav-crev navbar-expand-lg  bg-Nav-box ">
       <div className="container">
         {/* logo */}
         <Link className="logo icon-img-100" href="#">

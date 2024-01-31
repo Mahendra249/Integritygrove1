@@ -1,7 +1,7 @@
 import { icon1 } from "../../assets/imgs/HomePage";
 import { icon2 } from "../../assets/imgs/HomePage";
 import { icon3 } from "../../assets/imgs/HomePage";
-import {lottifile1,lottifile2,lottifile3,lottifile4} from "../../assets/imgs/HomePage/index"
+import { lottifile1, lottifile2, lottifile3, } from "../../assets/imgs/HomePage/index"
 
 import ServicesCard from "./ServicesCard";
 
@@ -21,7 +21,7 @@ function Services() {
               <div className="col-lg-4 d-flex align-items-center">
                 <div className="text">
                   <p>
-                  
+
                   </p>
                 </div>
               </div>
@@ -29,7 +29,7 @@ function Services() {
           </div>
           <div className="row">
             <div className="col-lg-4">
-              <ServicesCard title="Android Development" item={icon1} Lottieimg={lottifile2} description="Creating a higher spacing and how people move through a unique."/>
+              <ServicesCard title="Android/App Development" item={icon1} Lottieimg={lottifile2} description="Creating a higher spacing and how people move through a unique." />
             </div>
             <div className="col-lg-4">
               <ServicesCard title=" Web-app Development" item={icon2} Lottieimg={lottifile3} description="Creating a higher spacing and how people move through a unique." />

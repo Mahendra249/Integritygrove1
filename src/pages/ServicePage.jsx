@@ -11,7 +11,7 @@ const LazyTechStack = lazy(() => import("@/components/ServicePage/TechStack"));
 const ServicePage = () => {
   return (
     <>
-      <div className="Services">
+      <div className="Services" style={{ margin: "3.7rem" }}>
         <Suspense fallback={<div>Loading Services...</div>}>
           <LazyServices />
         </Suspense>
