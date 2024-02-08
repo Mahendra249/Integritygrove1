@@ -143,3 +143,12 @@
 }
 
 }
+
+
+
+@media   (min-width:992px){
+  .progress-wrap {
+    display: none;
+  }
+  
+}

@@ -1,84 +1,89 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+
 export default function Navbar() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const closeNavOnItemClick = () => {
+    // Close the navigation bar on small screens when a link is clicked
+    if (window.innerWidth <= 992) {
+      setIsNavOpen(false);
+    }
+  };
+
   return (
-    <nav className="navbar nav-crev navbar-expand-lg  bg-Nav-box ">
+    <nav className={`navbar nav-crev navbar-expand-lg  bg-Nav-box ${isNavOpen ? "nav-open" : ""}`}>
       <div className="container">
         {/* logo */}
-        <Link className="logo icon-img-100" href="#">
+        <Link className="logo icon-img-100" to="/" onClick={closeNavOnItemClick}>
           <p style={{ fontSize: "20px", fontWeight: "600" }}>IG Tech</p>
         </Link>
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${isNavOpen ? "collapsed" : ""}`}
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={() => setIsNavOpen(!isNavOpen)}
         >
           <span className="icon-bar">
             <IoMdMenu />
           </span>
         </button>
         <div
-          className="collapse navbar-collapse justify-content-center"
+          className={`collapse navbar-collapse justify-content-center ${isNavOpen ? "show" : ""}`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
             <li className="nav-item dropdown">
-              <Link className="nav-link hover-this hover-anim" to={"/"}>
+              <Link
+                className="nav-link hover-this hover-anim"
+                to={"/"}
+                onClick={closeNavOnItemClick}
+              >
                 <span className="rolling-text">Home</span>
               </Link>
             </li>
-            {/* <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span className="rolling-text">Community</span>
-              </Link>
-              <div className="dropdown-menu">
-                <Link className="dropdown-item" href="page-about.html">
-                  API
-                </Link>
-                <Link className="dropdown-item" href="page-services.html">
-                  Blogs
-                </Link>
-                <Link className="dropdown-item" to={"/ourteam"}>
-                  Our Team
-                </Link>
-                <Link className="dropdown-item" href="page-single-service.html">
-                  Hire
-                </Link>
-              </div>
-            </li> */}
             <li className="nav-item dropdown">
-              <Link className="nav-link " to={"/portfolio"}>
+              <Link
+                className="nav-link"
+                to={"/portfolio"}
+                onClick={closeNavOnItemClick}
+              >
                 <span className="rolling-text">Portfolio</span>
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link" to={"/service"}>
+              <Link
+                className="nav-link"
+                to={"/service"}
+                onClick={closeNavOnItemClick}
+              >
                 <span className="rolling-text">Services</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={"/Hire"}>
+              <Link
+                className="nav-link"
+                to={"/Hire"}
+                onClick={closeNavOnItemClick}
+              >
                 <span className="rolling-text">Hire</span>
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link " to={"/about"}>
+              <Link
+                className="nav-link"
+                to={"/about"}
+                onClick={closeNavOnItemClick}
+              >
                 <span className="rolling-text">About us</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={"/contact"}>
+              <Link
+                className="nav-link"
+                to={"/contact"}
+                onClick={closeNavOnItemClick}
+              >
                 <span className="rolling-text">Contact</span>
               </Link>
             </li>
@@ -91,10 +96,6 @@ export default function Navbar() {
               <span className="pe-7s-search" />
             </button>
           </div>
-          {/* <div className="search-icon">
-            <span className="pe-7s-search open-search" />
-            <span className="pe-7s-close close-search" />
-          </div> */}
         </div>
       </div>
     </nav>

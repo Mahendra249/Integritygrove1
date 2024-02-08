@@ -30,6 +30,21 @@
         transform: translate(-50%, -50%);
         z-index: 1000000 !important;
       }
+      @media (max-width:992px) {
+        .cursor{
+          display: none;
+        }
+        #progress-bar {
+          display: none;
+          visibility: none;
+          border: 2px solid red;
+        }
+        
+      }
+      body{
+        scroll-behavior: none;
+      }
+      
     </style>
     <!-- pe7-icon Library -->
     <link
@@ -49,7 +64,7 @@
 
     <!-- ==================== Start progress-scroll-button ==================== -->
 
-    <div class="progress-wrap cursor-pointer">
+    <div class="progress-wrap cursor-pointer" id="progress-bar">
       <svg
         class="progress-circle svg-content"
         width="100%"

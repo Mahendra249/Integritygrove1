@@ -1,14 +1,38 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HomeSliderBackground } from "../../assets/imgs/HomePage";
+// import Ag from "../../assets/imgs/HomePage/VideoHome/Ag.mp4"
+// import { Video } from "../../assets/imgs/HomePage/";
+
+import ReactPlayer from "react-player";
 
 export default function IntroSlider() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="main-box main-bg ontop">
       <header
         className="header-main full-height valign bg-img parallaxie"
         style={{ backgroundImage: `url(${HomeSliderBackground})` }}
         data-overlay-dark={7}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
+        {!isHovered && (
+          <img src={HomeSliderBackground} alt="Default Background" />
+        )}
+        {isHovered && (
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=BadB1z-V_qU&pp=ygUadGVjaCB2aWRlb3MgIGZvciB3ZWJzaXRlcyA%3D"
+            playing={true}
+            autoplay={true}
+            loop={false}
+            volume={50}
+            width="100%"
+            height="100%"
+            style={{ position: "absolute", top: 0, left: 0, zIndex: 1 }}
+          />
+        )}
         <div className="container ontop">
           <div className="row">
             <div className="col-lg-8">
@@ -20,7 +44,7 @@ export default function IntroSlider() {
             <div className="col-lg-4 d-flex align-items-end justify-content-end justify-end">
               <div className="d-flex align-items-center">
                 <div>
-                  <Link href="#" className="hover-this">
+                  <Link to="#" className="hover-this">
                     <div className="circle-button hover-anim">
                       <div className="rotate-circle fz-30 text-u">
                         <svg className="textcircle" viewBox="0 0 500 500">

@@ -59,6 +59,7 @@ import lottifile1 from "../HomePage/Lottie/android.json"
 import lottifile2 from "../HomePage/Lottie/app1.json"
 import lottifile3 from "../HomePage/Lottie/web.json"
 import lottifile4 from "../HomePage/Lottie/webb.json"
+//  import {Video} from "../HomePage/VideoHome/Vg.mp4"
 
 export {
   LogoImage,
@@ -120,4 +121,5 @@ export {
   lottifile2,
   lottifile3,
   lottifile4,
+  // Video
 };

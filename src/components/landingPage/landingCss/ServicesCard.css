@@ -96,3 +96,12 @@
     transition: 1s ;
 
 }
+@media (min-width:900px) and (max-width:1040px) {
+  .card{
+    border: 2px solid red ;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+}
