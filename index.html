@@ -30,21 +30,18 @@
         transform: translate(-50%, -50%);
         z-index: 1000000 !important;
       }
-      @media (max-width:992px) {
-        .cursor{
-          display: none;
+      @media (max-width: 992px) {
+        .cursor {
+          display: none !important;
         }
         #progress-bar {
-          display: none;
+          display: none !important;
           visibility: none;
-          border: 2px solid red;
         }
-        
       }
-      body{
+      body {
         scroll-behavior: none;
       }
-      
     </style>
     <!-- pe7-icon Library -->
     <link
@@ -55,7 +52,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./src/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/styles/HomePage/bootstrap.min.css" />
     <title>IG-Tech</title>
   </head>
 
@@ -63,7 +60,6 @@
     <div class="cursor"></div>
 
     <!-- ==================== Start progress-scroll-button ==================== -->
-
     <div class="progress-wrap cursor-pointer" id="progress-bar">
       <svg
         class="progress-circle svg-content"
@@ -74,9 +70,7 @@
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
     </div>
-
     <!-- ==================== End progress-scroll-button ==================== -->
-
     <div id="root"></div>
     <!-- externalscript -->
     <!-- Include jQuery first -->
@@ -256,8 +250,6 @@
       /* =============================================================================
 --------------------------------  Fade Header   --------------------------------
 ============================================================================= */
-
-
     </script>
     <script type="module" src="/src/main.jsx" defer></script>
   </body>
