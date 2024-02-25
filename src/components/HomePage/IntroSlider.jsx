@@ -5,7 +5,6 @@ import BgVideo from "./../../assets/VideoHome/BGVIDEO.mp4";
 import ReactAudioPlayer from "react-audio-player";
 import BgAudio from "./../../assets/VideoHome/output.ogg";
 
-
 export default function IntroSlider() {
   const [isHovered, setIsHovered] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
