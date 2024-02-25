@@ -46,7 +46,7 @@ export default function IntroSlider() {
               Your browser does not support the video tag.
             </video>
 
-            <ReactAudioPlayer src={BgAudio} autoPlay={true} />
+            <ReactAudioPlayer src={BgAudio} autoPlay />
           </>
         )}
 
