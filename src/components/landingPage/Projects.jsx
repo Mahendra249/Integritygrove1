@@ -53,7 +53,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="portfolio clasic section-padding " data-scroll-index="3">
+    <section
+      className="portfolio clasic section-padding "
+      data-scroll-index="3"
+    >
       <div className="container">
         <div className="item">
           <h1>Projects</h1>

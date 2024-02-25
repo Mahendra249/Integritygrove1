@@ -1,28 +1,25 @@
-import { lazy } from "react";
+import { Suspense, lazy } from "react";
 
-// Lazy-loaded components
-const LeftProjects = lazy(() => import("@/components/Portfolio/LeftProjects"));
-const RightProjects = lazy(() =>
-  import("@/components/Portfolio/RightProjects")
-);
 const ProjectDesc = lazy(() => import("@/components/Portfolio/ProjectDesc"));
 
 function ProjectPage() {
   return (
     <>
-      <ProjectDesc />
-      <section className="blog-list-half section-padding sub-bg">
-        <div className="container">
-          <div className="row">
-            <SingleProject/>
-            <SingleProject/>
-            <SingleProject/>
-            <SingleProject/>
-            <SingleProject/>
-            <SingleProject/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectDesc />
+        <section className="blog-list-half section-padding sub-bg">
+          <div className="container">
+            <div className="row">
+              <SingleProject />
+              <SingleProject />
+              <SingleProject />
+              <SingleProject />
+              <SingleProject />
+              <SingleProject />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Suspense>
     </>
   );
 }
@@ -36,6 +33,7 @@ function SingleProject() {
         <div className="row">
           <div className="col-md-6 img">
             <img
+              loading="lazy"
               src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/h1.jpg"
               alt
             />

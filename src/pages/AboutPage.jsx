@@ -6,7 +6,6 @@ import {
 const AboutPage = () => {
   return (
     <div>
-      {/* ....................header................................. */}
       <header
         className="page-header section-padding pb-15"
         style={{
@@ -48,51 +47,14 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        {/* <div className="main-marq xlrg section-padding pb-0">
-          <div className="slide-har st1">
-            <div className="box">
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-            </div>
-            <div className="box">
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-              <div className="item">
-                <h4>About Us</h4>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </header>
-
-      {/* ***************** About Section******************************* */}
 
       <section className="pg-about section-padding sub-bg">
         <div className="container">
-          <div className="row" style={{alignItems:"center",justifyContent:"center"}}>
+          <div
+            className="row"
+            style={{ alignItems: "center", justifyContent: "center" }}
+          >
             <div className="col-lg-12">
               <div
                 className="bg-img radius-10 md-mb50"
@@ -107,11 +69,6 @@ const AboutPage = () => {
                 style={{ backgroundImage: `url(${aboutImg2})` }}
               />
             </div>
-            {/* <div className="col-lg-4">
-              <div className="sec-head mt-80">
-                <h6 className="sub-title">Our Story.</h6>
-              </div>
-            </div> */}
             <div className="col-lg-12">
               <div className="cont ">
                 <h1 className="text-center">About</h1>
@@ -128,8 +85,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* **************Service Section*********************************** */}
 
       <section className="serv-box section-padding">
         <div className="container">
@@ -209,123 +164,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* ==================== Start about ==================== */}
-
-      {/* <section className="intro-corp section-padding pt-0">
-        <div className="container">
-          <div className="row justify-content-around">
-            <div className="col-lg-5 valign md-mb50">
-              <div className="imgs mb-80">
-                <div className="img1">
-                  <img
-                    loading="lazy"
-                    src={aboutImg1}
-                    alt=""
-                    className="radius-10"
-                  />
-                </div>
-                <div className="img2">
-                  <img
-                    loading="lazy"
-                    src={aboutImg2}
-                    alt=""
-                    className="radius-10"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 valign">
-              <div className="cont">
-                <div className="text">
-                  <h2
-                    className="d-slideup wow animated"
-                    style={{ visibility: "visible" }}
-                  >
-                    <span className="sideup-text">
-                      <span className="up-text">Watch the creative</span>
-                    </span>
-                    <span className="sideup-text">
-                      <span className="up-text">process behind our</span>
-                    </span>
-                    <span className="sideup-text">
-                      <span className="up-text">
-                        <span>digital marketing</span>.
-                      </span>
-                    </span>
-                  </h2>
-                </div>
-                <div className="accordion bord mt-40">
-                  <div
-                    className="item mb-15 wow fadeInUp"
-                    data-wow-delay=".1s"
-                    style={{
-                      visibility: "visible",
-                      animationDelay: "0.1s",
-                      animationName: "fadeInUp",
-                    }}
-                  >
-                    <div className="title">
-                      <h6 className="fz-18">
-                        The Power of Influencer Marketing
-                      </h6>
-                      <span className="ico" />
-                    </div>
-                    <div className="accordion-info">
-                      <p className="fz-14">
-                        Taken possession of my entire soul, like these sweet
-                        mornings of spring which i enjoy with my whole.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className="item mb-15 wow fadeInUp"
-                    data-wow-delay=".3s"
-                    style={{
-                      visibility: "visible",
-                      animationDelay: "0.3s",
-                      animationName: "fadeInUp",
-                    }}
-                  >
-                    <div className="title">
-                      <h6 className="fz-18">Unique and Influential Design</h6>
-                      <span className="ico" />
-                    </div>
-                    <div className="accordion-info">
-                      <p className="fz-14">
-                        Taken possession of my entire soul, like these sweet
-                        mornings of spring which i enjoy with my whole.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className="item wow fadeInUp"
-                    data-wow-delay=".5s"
-                    style={{
-                      visibility: "visible",
-                      animationDelay: "0.5s",
-                      animationName: "fadeInUp",
-                    }}
-                  >
-                    <div className="title">
-                      <h6 className="fz-18">We Build and Activate Brands</h6>
-                      <span className="ico" />
-                    </div>
-                    <div className="accordion-info">
-                      <p className="fz-14">
-                        Taken possession of my entire soul, like these sweet
-                        mornings of spring which i enjoy with my whole.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* ==================== Start Testimonials ==================== */}
 
       <section className="testim-vrt sub-bg">
         <div className="container">
@@ -595,7 +433,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-  
     </div>
   );
 };

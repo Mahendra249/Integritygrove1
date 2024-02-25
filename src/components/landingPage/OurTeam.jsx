@@ -67,7 +67,7 @@
 //               <div className="col-lg-3 col-md-6" style={{margin:"12px",width:"23%"}} key={index}>
 //                 <div className="item mb-50" >
 //                   <div className="img">
-//                     <img  loading="lazy" src={teammember} alt="" />
+//                     <img loading="lazy"   src={teammember} alt="" />
 //                   </div>
 //                   <div className="info mt-20">
 //                     <span className="fz-12 opacity-8">{data.designation}</span>

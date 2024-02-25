@@ -26,6 +26,7 @@ export default function BlogDetails() {
                       <div className="d-flex align-items-center">
                         <a href="#0" className="circle-60">
                           <img
+                            loading="lazy"
                             src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/author1.jpg"
                             alt
                             className="circle-img"
@@ -144,6 +145,7 @@ export default function BlogDetails() {
                   <div className="col-sm-6">
                     <div className="iner-img sm-mb30">
                       <img
+                        loading="lazy"
                         src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/b2.jpg"
                         alt
                       />
@@ -152,6 +154,7 @@ export default function BlogDetails() {
                   <div className="col-sm-6">
                     <div className="iner-img">
                       <img
+                        loading="lazy"
                         src="ttps://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/b3.jpg"
                         alt
                       />
@@ -248,6 +251,7 @@ export default function BlogDetails() {
                 <div className="author-img mr-30">
                   <div className="img">
                     <img
+                      loading="lazy"
                       src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/author1.jpg"
                       alt
                       className="circle-img"
@@ -312,6 +316,7 @@ export default function BlogDetails() {
                     <div className="col-md-6">
                       <div className="img">
                         <img
+                          loading="lazy"
                           src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/h5.jpg"
                           alt
                         />
@@ -342,6 +347,7 @@ export default function BlogDetails() {
                     <div className="col-md-6">
                       <div className="img">
                         <img
+                          loading="lazy"
                           src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/h6.jpg"
                           alt
                         />
@@ -387,6 +393,7 @@ export default function BlogDetails() {
                         <div className="user-img mr-30">
                           <div className="img circle-80 line-height-1">
                             <img
+                              loading="lazy"
                               src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/author1.jpg"
                               alt
                               className="circle-img"
@@ -475,6 +482,7 @@ export default function BlogDetails() {
                           </span>
                         </span>
                         <img
+                          loading="lazy"
                           src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/svg-assets/circle-star.svg"
                           alt
                           className="circle-star"

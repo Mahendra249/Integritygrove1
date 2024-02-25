@@ -35,6 +35,7 @@ function SingleBlog() {
       <div className="item mb-50">
         <div className="img">
           <img
+            loading="lazy"
             src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/blog/h2.jpg"
             alt
           />

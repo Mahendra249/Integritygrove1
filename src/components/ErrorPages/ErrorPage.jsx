@@ -8,6 +8,7 @@ const ErrorPage = () => {
           <div className="col-lg-5 col-md-8">
             <div className="img">
               <img
+                loading="lazy"
                 src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/svg-assets/404.svg"
                 alt=""
               />

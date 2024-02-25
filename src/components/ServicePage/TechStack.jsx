@@ -79,7 +79,7 @@ const TechStack = () => {
         <div className="main-container-tech">
           {skillsData.map((item) => (
             <div className="main-child-part">
-              <img src={item.imageSrc} alt={item.name} />
+              <img loading="lazy" src={item.imageSrc} alt={item.name} />
             </div>
           ))}
         </div>

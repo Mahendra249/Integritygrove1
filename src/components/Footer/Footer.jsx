@@ -97,7 +97,11 @@ function Footer() {
               <div className="col-lg-4">
                 <div className="logo">
                   <Link href="#">
-                    <img src="assets/imgs/logo-light.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="assets/imgs/logo-light.png"
+                      alt=""
+                    />
                   </Link>
                 </div>
               </div>

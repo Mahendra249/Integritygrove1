@@ -1,11 +1,6 @@
 import { lazy, Suspense } from "react";
-
-//  import './PagesCss/service.css';
-
-// Lazy-loaded components
 const LazyServices = lazy(() => import("@/components/landingPage/Services"));
 const LazyServicePge = lazy(() => import("@/components/ServicePage/ServicePge"));
-
 const LazyTechStack = lazy(() => import("@/components/ServicePage/TechStack"));
 
 const ServicePage = () => {

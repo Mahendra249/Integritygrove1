@@ -1,12 +1,17 @@
-import Header from "../components/ourTeamPage/Header";
-import TeamCrews from "@/components/ourTeamPage/TeamCrews";
-import Parallex from "@/components/ourTeamPage/Parallex";
+import  { Suspense ,lazy} from "react";
+
+const Header = lazy(() => import("../components/ourTeamPage/Header"));
+const TeamCrews = lazy(() => import("@/components/ourTeamPage/TeamCrews"));
+const Parallex = lazy(() => import("@/components/ourTeamPage/Parallex"));
+
 function OurTeamPage() {
   return (
     <>
-      <Header />
-      <TeamCrews />
-      <Parallex />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+        <TeamCrews />
+        <Parallex />
+      </Suspense>
     </>
   );
 }
