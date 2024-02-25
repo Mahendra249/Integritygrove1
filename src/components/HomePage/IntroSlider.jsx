@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HomeSliderBackground } from "../../assets/imgs/HomePage";
 import BgVideo from "./../../assets/VideoHome/BGVIDEO.mp4";
-import BgAudio from "./../../assets/VideoHome/output.ogg";
 import ReactAudioPlayer from "react-audio-player";
+import BgAudio from "./../../assets/VideoHome/output.ogg";
+
 
 export default function IntroSlider() {
   const [isHovered, setIsHovered] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
 
   const handleVideoEnd = () => {
-    // Set videoEnded to true when the video ends
     setVideoEnded(true);
   };
 
@@ -24,7 +24,9 @@ export default function IntroSlider() {
             isHovered && !videoEnded ? "none" : `url(${HomeSliderBackground})`,
           position: "relative",
         }}
-        onMouseOver={() => setIsHovered(true)}
+        onMouseOver={() => {
+          setTimeout(() => setIsHovered(true), 2000);
+        }}
         onMouseLeave={() => setIsHovered(false)}
       >
         {isHovered && !videoEnded && (
