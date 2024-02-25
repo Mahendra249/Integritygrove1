@@ -1,7 +1,6 @@
-import { useEffect, lazy } from "react";
-import { useLocation } from "react-router-dom";
-
-const IntroSlider = lazy(() => import("../components/HomePage/IntroSlider"));
+import { useEffect, useState, lazy } from "react";
+import IntroSlider from "@/components/HomePage/IntroSlider";
+import IntroSlider992 from "@/components/HomePage/IntroSlider992";
 const Pricing = lazy(() => import("../components/landingPage/Pricing"));
 const Testimonials = lazy(() =>
   import("../components/landingPage/Testimonials")
@@ -14,30 +13,23 @@ const Projects = lazy(() => import("../components/landingPage/Projects"));
 const FAQ = lazy(() => import("@/components/landingPage/FAQ"));
 
 export default function HomePage() {
-  const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const disableBackButton = () => {
-      if (location.pathname === "/") {
-        window.history.pushState(null, "", window.location.href);
-        window.onpopstate = function () {
-          window.history.go(1);
-        };
-      } else {
-        window.onpopstate = null;
-      }
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
     };
 
-    disableBackButton();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.onpopstate = null;
+      window.removeEventListener("resize", handleResize);
     };
-  }, [location]);
+  }, []);
 
   return (
     <main className="main-bg">
-      <IntroSlider />
+      {windowWidth < 992 ? <IntroSlider992 /> : <IntroSlider />}
       <Services />
       <Pricing />
       <Projects />
