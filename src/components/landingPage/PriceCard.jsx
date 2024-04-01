@@ -1,15 +1,15 @@
 import "./landingCss/PriceCard.css";
-import { BackgroundImage } from "../../assets/imgs/HomePage/index";
-const Pricecard = () => {
+import { BackgroundImage} from "../../assets/imgs/HomePage/index";
+const Pricecard = (props) => {
   return (
     <div className="main-cardbox">
-      <div className="card-part1">
+      <div className="card-part1" >
         <ul>
-          <li>10 Hours of task work</li>
-          <li>1 User included</li>
-          <li>Advertising</li>
-          <li>Web developments</li>
-          <li>24 / 7 Support</li>
+          <li>{props.l1}</li>
+          <li>{props.l2}</li>
+          <li>{props.l3}</li>
+          <li>{props.l4}</li>
+          <li>{props.l5}</li>
         </ul>
         <button className="Price-btn">
           <span>Get Started</span>
@@ -29,15 +29,14 @@ const Pricecard = () => {
       </div>
       <div
         className="card-part2"
-        data-background={BackgroundImage}
-        style={{ backgroundImage: `url(${BackgroundImage})` }}
+        data-background={props.backimg}
+        style={{ backgroundImage: `url(${props.backimg})` }}
       >
         <div className="info-box pb-30 bord-thin-bottom mb-30 price-description">
           <h6 className="sub-title mb-15">Basic Plan</h6>
           <div className="amount">
             <div>
-              <span className="main-color3 num-font fw-600 fz-50">$19</span>{" "}
-              <span className="fz-14 fw-400">/ Mounth</span>
+              <span className="main-color3 num-font fw-600 fz-50">{props.price}</span>{"Only"}
             </div>
           </div>
           <p className="fz-13">10% taxes will include after make price.</p>

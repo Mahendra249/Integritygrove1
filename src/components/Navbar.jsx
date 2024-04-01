@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+import { IGtech } from "@/assets/imgs/HomePage";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,7 +18,9 @@ export default function Navbar() {
       <div className="container">
         {/* logo */}
         <Link className="logo icon-img-100" to="/" onClick={closeNavOnItemClick}>
-          <p style={{ fontSize: "20px", fontWeight: "600" }}>IG Tech</p>
+          <p style={{ fontSize: "20px", fontWeight: "600" }}>
+            <img src={IGtech} alt="" />
+          </p>
         </Link>
         <button
           className={`navbar-toggler ${isNavOpen ? "collapsed" : ""}`}
