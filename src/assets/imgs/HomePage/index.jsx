@@ -1,5 +1,6 @@
 // images.js
-
+import Pricecardback from "./background/p.jpg"
+import IGtech from "./AI/iglogo.png"
 import LogoImage from "./logo-light.png";
 import HomeSliderBackground from "./background/14.jpg";
 import TestomoImage1 from "./testim/1.jpg";
@@ -54,7 +55,9 @@ import Tech30 from "./freelancer/skills/apache.png";
 import Tech31 from "./freelancer/skills/java.png";
 import StarCircle from "./svg-assets/circle-star.png";
 import Bg1 from "./background/4.jpg";
-import BackgroundImage from "../HomePage/background/pricrcard1.jpg.jpg"
+import BackgroundImage from "../HomePage/background/p.jpg"
+import BackgroundImage2 from "../HomePage/AI/3.webp"
+import BackgroundImage3 from "../HomePage/background/Computer.webp"
 import lottifile1 from "../HomePage/Lottie/android.json"
 import lottifile2 from "../HomePage/Lottie/app1.json"
 import lottifile3 from "../HomePage/Lottie/web.json"
@@ -117,9 +120,13 @@ export {
   StarCircle,
   Bg1,
   BackgroundImage,
+  BackgroundImage2,
+  BackgroundImage3,
   lottifile1,
   lottifile2,
   lottifile3,
   lottifile4,
+  IGtech,
+  Pricecardback,
   // Video
 };

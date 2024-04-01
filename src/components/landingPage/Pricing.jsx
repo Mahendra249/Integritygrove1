@@ -1,3 +1,4 @@
+import { BackgroundImage, BackgroundImage2, BackgroundImage3 } from "@/assets/imgs/HomePage";
 import { lazy, Suspense } from "react";
 
 const LazyPriceCard = lazy(() => import("./PriceCard"));
@@ -24,17 +25,17 @@ const Pricing = () => {
         <div className="row md-marg">
           <div className="col-lg-4">
             <Suspense fallback={<div>Loading...</div>}>
-              <LazyPriceCard />
+            <LazyPriceCard l1={"Aviater Game"} l2={"Satta Matka Game"} l3={" Daman Game"} l4={"Teen Patti Game"} price ={"$999/-"}  backimg={BackgroundImage}/>
             </Suspense>
           </div>
           <div className="col-lg-4">
             <Suspense fallback={<div>Loading...</div>}>
-              <LazyPriceCard />
+              <LazyPriceCard l1={"Taxi App"} l2={"Dating App (Chat App)"} l3={" Food Delivery App"} l4={"Portfolio Web App"} price ={"$1299-"}  backimg={BackgroundImage3} />
             </Suspense>
           </div>
           <div className="col-lg-4">
             <Suspense fallback={<div>Loading...</div>}>
-              <LazyPriceCard />
+              <LazyPriceCard l1={"Hotel Management System " } l2={"Learning Management System"} l3={" CRM & HRMS System"} l4={"Ecommerce Web App (Multi Vendor and Single Vendor)"} price ={"$1999/-"}  backimg={BackgroundImage2} />
             </Suspense>
           </div>
         </div>
