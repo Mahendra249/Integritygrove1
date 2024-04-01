@@ -1,25 +1,29 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
-import { IGtech } from "@/assets/imgs/HomePage";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const closeNavOnItemClick = () => {
-    // Close the navigation bar on small screens when a link is clicked
     if (window.innerWidth <= 992) {
       setIsNavOpen(false);
     }
   };
 
   return (
-    <nav className={`navbar nav-crev navbar-expand-lg  bg-Nav-box ${isNavOpen ? "nav-open" : ""}`}>
+    <nav
+      className={`navbar nav-crev navbar-expand-lg  bg-Nav-box ${
+        isNavOpen ? "nav-open" : ""
+      }`}
+    >
       <div className="container">
         {/* logo */}
-        <Link className="logo icon-img-100" to="/" onClick={closeNavOnItemClick}>
-          <p style={{ fontSize: "20px", fontWeight: "600" }}>
-            <img src={IGtech} alt="" />
+        <Link to="/" onClick={closeNavOnItemClick}>
+          <p
+            style={{ fontSize: "20px", fontWeight: "600", marginLeft: "32px" }}
+          >
+            IG-Tech
           </p>
         </Link>
         <button
@@ -32,7 +36,10 @@ export default function Navbar() {
           </span>
         </button>
         <div
-          className={`collapse navbar-collapse justify-content-center ${isNavOpen ? "show" : ""}`}
+          style={{ marginRight: "32px" }}
+          className={`collapse navbar-collapse justify-content-end  ${
+            isNavOpen ? "show" : ""
+          }`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
@@ -63,13 +70,22 @@ export default function Navbar() {
                 <span className="rolling-text">Services</span>
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className="nav-link"
                 to={"/Hire"}
                 onClick={closeNavOnItemClick}
               >
                 <span className="rolling-text">Hire</span>
+              </Link>
+            </li> */}
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                to={"/Blog"}
+                onClick={closeNavOnItemClick}
+              >
+                <span className="rolling-text">Blog</span>
               </Link>
             </li>
             <li className="nav-item dropdown">

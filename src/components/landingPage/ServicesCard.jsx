@@ -20,7 +20,9 @@ const ServicesCard = (props) => {
           />
           <p className="card-title">{props.title}</p>
           <hr />
-          <p className="card-description">{props.description}</p>
+          <p className="card-description " style={{ color: "#dee2e6" }}>
+            {props.description}
+          </p>
         </div>
       </div>
     </div>

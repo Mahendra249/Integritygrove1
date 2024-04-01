@@ -1,26 +1,15 @@
-import React from 'react'
+import React from "react";
 
 function FAQ() {
   return (
     <>
       <header
-        className="page-header  text-center section-padding pb-0"
-        style={{
-          translate: "none",
-          rotate: "none",
-          scale: "none",
-          transform: "translate(0px, 0px)",
-        }}
+        className="page-header text-center section-padding pb-0"
+        style={{ transform: "translate(0px, 0px)" }}
       >
         <div
           className="container mt-80"
-          style={{
-            translate: "none",
-            rotate: "none",
-            scale: "none",
-            opacity: 1,
-            transform: "translate(0px, 0px)",
-          }}
+          style={{ opacity: 1, transform: "translate(0px, 0px)" }}
         >
           <div className="row">
             <div className="col-lg-12">
@@ -34,10 +23,10 @@ function FAQ() {
                 <div className="col-lg-11 offset-lg-1">
                   <div className="text mt-30">
                     <p>
-                      We’re a diverse team that works as fancies attention to
-                      details, enjoys beers on Friday nights and aspires to
-                      design the dent in the universe. To take a trivial example
-                      undertakes laborious.
+                      Discover more about IG-Tech, our comprehensive tech
+                      solutions, and how we design the future. Our team is
+                      dedicated to crafting innovative software, games,
+                      websites, and apps that set new industry standards.
                     </p>
                   </div>
                 </div>
@@ -47,96 +36,67 @@ function FAQ() {
         </div>
       </header>
       <section
-        className="faqs section-padding main-bg "
+        className="faqs section-padding main-bg"
         style={{ marginTop: "-64px" }}
       >
         <div className="container">
           <div className="row lg-marg">
             <div className="col-lg-6 md-mb50">
               <div className="item pb-50 mb-50 bord-thin-bottom">
-                <h6 className="mb-15">01.What services does IG TECH offer??</h6>
+                <h6 className="mb-15">01. What services does IG TECH offer?</h6>
                 <p>
-                  We offer top-notch IT services including website, app, and
-                  blockchain development. Our tailored solutions empower
-                  businesses with innovative technologies, driving success in
-                  today's digital landscape."
+                  IG Tech is your one-stop for innovative IT services, including
+                  web and app development, game creation, blockchain innovation,
+                  and deployment services, tailored to propel businesses into
+                  the digital age.
                 </p>
               </div>
               <div className="item pb-50 mb-50 bord-thin-bottom">
                 <h6 className="mb-15">
-                  02. What types of technologies does IG Tech specialize in?
+                  02. What technologies do we specialize in?
                 </h6>
                 <p>
-                  "At IG Tech, we specialize in a wide array of cutting-edge
-                  technologies. From web and mobile app development to
-                  blockchain, artificial intelligence, cloud computing, and
-                  cybersecurity, our expertise spans across diverse domains. We
-                  are committed to leveraging these technologies to deliver
-                  innovative solutions that drive success for our clients in
-                  today's dynamic digital landscape."
+                  Our expertise spans across web and mobile app development,
+                  blockchain, AI, cloud solutions, and cybersecurity, aiming to
+                  deliver cutting-edge solutions for a digital-first world.
                 </p>
               </div>
               <div className="item">
                 <h6 className="mb-15">
-                  03. Does IG Tech offer custom software development services?
+                  03. Do we offer custom software development?
                 </h6>
                 <p>
-                  "Absolutely! IG Tech specializes in custom software
-                  development, crafting tailored solutions to address each
-                  client's unique needs. Our expert team ensures high-quality,
-                  scalable, and user-friendly software aligned with your
-                  business objectives. Expect personalized attention and
-                  unparalleled support throughout the process and beyond."
+                  Absolutely! We craft bespoke software solutions, ensuring they
+                  align perfectly with your business goals for maximum
+                  efficiency and user satisfaction.
                 </p>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="item pb-50 mb-50 bord-thin-bottom">
-                <h6 className="mb-15">
-                  04.What industries does IG Tech cater to?
-                </h6>
+                <h6 className="mb-15">04. Which industries do we cater to?</h6>
                 <p>
-                  IG Tech caters to a wide array of industries, leveraging our
-                  expertise to provide innovative technological solutions
-                  tailored to each sector's specific needs. From healthcare and
-                  finance to education and retail, we are committed to
-                  empowering businesses across various industries with
-                  cutting-edge technology. Our versatile approach ensures that
-                  regardless of your industry, IG Tech has the capabilities and
-                  experience to deliver exceptional results and drive success
-                  for your organization.
+                  IG Tech serves a multitude of sectors including healthcare,
+                  finance, education, and retail, adapting our tech solutions to
+                  meet industry-specific challenges.
                 </p>
               </div>
               <div className="item pb-50 mb-50 bord-thin-bottom">
                 <h6 className="mb-15">
-                  05.What is IG Tech's process for developing mobile
-                  applications??
+                  05. How do we approach mobile application development?
                 </h6>
                 <p>
-                  At IG Tech, our mobile app development process is meticulously
-                  crafted for excellence. We begin with thorough discovery and
-                  planning, defining project scope and timelines. Our design
-                  team then creates intuitive interfaces aligned with client
-                  branding. Development follows, employing cutting-edge
-                  technologies and best practices. Rigorous testing ensures
-                  flawless performance, leading to deployment on app stores.
-                  Post-launch, we offer ongoing support and maintenance to
-                  ensure continuous success. Throughout, our focus remains on
-                  delivering value and exceeding client expectations.
+                  Our approach integrates discovery, design, development, and
+                  testing, culminating in the launch of exceptional mobile apps,
+                  followed by ongoing support.
                 </p>
               </div>
               <div className="item">
-                <h6 className="mb-15">
-                  06. How can I get started working with your IT company?
-                </h6>
+                <h6 className="mb-15">06. How to start working with us?</h6>
                 <p>
-                  To start collaborating with us, please fill out the form on
-                  our "Hire" page with your project details, contact
-                  information, and preferred timeline. Alternatively, you can
-                  reach us directly via email or phone. Our team will promptly
-                  get in touch to schedule a consultation to discuss your
-                  project requirements further. We look forward to partnering
-                  with you to bring your vision to life!
+                  Kickstart your project with IG Tech by contacting us through
+                  our website, email, or phone. Our team eagerly awaits to
+                  discuss and bring your innovative ideas to life.
                 </p>
               </div>
             </div>
@@ -147,4 +107,4 @@ function FAQ() {
   );
 }
 
-export default FAQ
+export default FAQ;

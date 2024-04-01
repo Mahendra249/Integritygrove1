@@ -3,6 +3,7 @@ import App from "./App.jsx";
 
 //========= order is important ===========//
 import "./styles/HomePage/HomePage.css";
+import "./index.css";
 // ======== providers and hooks =========//
 import { BrowserRouter } from "react-router-dom";
 

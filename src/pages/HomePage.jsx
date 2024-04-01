@@ -1,6 +1,5 @@
 import { useEffect, useState, lazy } from "react";
 import IntroSlider from "@/components/HomePage/IntroSlider";
-import IntroSlider992 from "@/components/HomePage/IntroSlider992";
 const Pricing = lazy(() => import("../components/landingPage/Pricing"));
 const Testimonials = lazy(() =>
   import("../components/landingPage/Testimonials")
@@ -19,9 +18,7 @@ export default function HomePage() {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -29,7 +26,7 @@ export default function HomePage() {
 
   return (
     <main className="main-bg">
-      {windowWidth < 992 ? <IntroSlider992 /> : <IntroSlider />}
+      <IntroSlider />
       <Services />
       <Pricing />
       <Projects />

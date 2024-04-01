@@ -6,15 +6,14 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import ErrorPage from "./components/ErrorPages/ErrorPage";
 import Connection from "./components/ErrorPages/Connection";
-
-const HomeLayout = lazy(() => import("./layout/HomeLayout"));
-const HomePage = lazy(() => import("./pages/HomePage"));
-const OurTeamPage = lazy(() => import("./pages/OurTeamPage"));
-const ProjectPage = lazy(() => import("./pages/PortfolioPage"));
-const AboutPage = lazy(() => import("./pages/AboutPage"));
-const ContactPage = lazy(() => import("./pages/ContactPage"));
-const ServicePage = lazy(() => import("./pages/ServicePage"));
-const HirePage = lazy(() => import("./pages/HirePage"));
+import HomeLayout from "./layout/HomeLayout";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/PortfolioPage";
+import AboutPage from "./pages/AboutPage";
+import OurTeamPage from "./pages/OurTeamPage";
+import ContactPage from "./pages/ContactPage";
+import ServicePage from "./pages/ServicePage";
+import HirePage from "./pages/HirePage";
 
 function App() {
   const { pathname, search } = useLocation();
@@ -38,14 +37,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense fallback={<Loader />}>
-              <HomeLayout />
-            </Suspense>
-          }
-        >
+        <Route path="/" element={<HomeLayout />}>
           <Route index element={<HomePage />} />
           <Route path="/portfolio" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
