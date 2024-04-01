@@ -14,7 +14,7 @@ const Projects = () => {
       imgSrc: Project1,
       category: "Branding",
       title: "GeekFolio Architecture",
-      year: "2023",
+      year: "2024",
       detailsLink: "project-details1.html",
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
       imgSrc: Project2,
       category: "Branding",
       title: "Luxury Modern Chair",
-      year: "2023",
+      year: "2024",
       detailsLink: "project-details1.html",
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
       imgSrc: Project3,
       category: "Branding",
       title: "Partiner BPO",
-      year: "2023",
+      year: "2024",
       detailsLink: "project-details1.html",
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
       imgSrc: Project4,
       category: "Branding",
       title: "From our gallery",
-      year: "2023",
+      year: "2024",
       detailsLink: "project-details1.html",
     },
     {
@@ -46,7 +46,7 @@ const Projects = () => {
       imgSrc: Project5,
       category: "Branding",
       title: "Astra Brand Identity",
-      year: "2023",
+      year: "2024",
       detailsLink: "project-details1.html",
     },
     // Add more items as needed

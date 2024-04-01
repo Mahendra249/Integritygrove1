@@ -1,4 +1,6 @@
+import Projects from "@/components/landingPage/Projects";
 import { Suspense, lazy } from "react";
+
 
 const ProjectDesc = lazy(() => import("@/components/Portfolio/ProjectDesc"));
 
@@ -10,12 +12,13 @@ function ProjectPage() {
         <section className="blog-list-half section-padding sub-bg">
           <div className="container">
             <div className="row">
+              {/* <SingleProject />
               <SingleProject />
               <SingleProject />
               <SingleProject />
               <SingleProject />
-              <SingleProject />
-              <SingleProject />
+              <SingleProject /> */}
+              <Projects/>
             </div>
           </div>
         </section>

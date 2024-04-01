@@ -18,12 +18,12 @@ const ServicePge = () => {
   return (
     <div className="service-page-container" >
       <div className="service-content">
-        <h2 className="service-heading ">
+        {/* <h2 className="service-heading ">
           <span className="service-icon">
             <GrServices />
           </span>
           Our Services
-        </h2>
+        </h2> */}
         <h4 className="service-heading-part-1">
           IT Staff Augmentation to Worldclass Software Services
         </h4>

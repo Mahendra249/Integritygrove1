@@ -49,7 +49,7 @@ function Header() {
           </div>
         </div>
         <div className="main-marq xlrg section-padding pb-0">
-          <div className="slide-har st1">
+          {/* <div className="slide-har st1">
             <div className="box">
               <div className="item">
                 <h4>Watch Our Project</h4>
@@ -84,7 +84,7 @@ function Header() {
                 <h4>Watch Our Project</h4>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
     </>

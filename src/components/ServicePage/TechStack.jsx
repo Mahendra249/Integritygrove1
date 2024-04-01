@@ -72,8 +72,9 @@ const TechStack = () => {
     >
       <div className="container">
         <div className="position-re">
-          <h6 className="dot-titl-non mb-10">Featured Services</h6>
-          <h2 className="fz-60 fw-700">Tech Stack</h2>
+          <h2 className="fz-60 fw-70 d-flex align-items-center justify-content-center">
+            Tech Stack
+          </h2>
         </div>
         {/* <div className="row"> */}
         <div className="main-container-tech">

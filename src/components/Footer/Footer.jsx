@@ -33,10 +33,10 @@ function Footer() {
                   <h6>Address</h6>
                 </div>
                 <div className="text">
-                  <p>
-                    21, Om vihar 2, shri ram ki nangal, goner mode, jaipur,
-                    Rajastha, 302022
-                  </p>
+                  <p>GST NO. 08AAKFI5823P1ZQ</p>
+                </div>
+                <div className="text">
+                  <p>Jaipur , Rajashan , 302022</p>
                 </div>
               </div>
             </div>

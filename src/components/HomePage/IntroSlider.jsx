@@ -15,7 +15,7 @@ export default function IntroSlider() {
 
   return (
     <div className="main-box main-bg ontop">
-      <header
+       <header
         className="header-main full-height valign bg-img parallaxie"
         data-overlay-dark={7}
         style={{
@@ -23,12 +23,12 @@ export default function IntroSlider() {
             isHovered && !videoEnded ? "none" : `url(${HomeSliderBackground})`,
           position: "relative",
         }}
-        onMouseOver={() => {
-          setTimeout(() => setIsHovered(true), 2000);
-        }}
-        onMouseLeave={() => setIsHovered(false)}
+        // onMouseOver={() => {
+        //   setTimeout(() => setIsHovered(true), 2000);
+        // }}
+        // onMouseLeave={() => setIsHovered(false)}
       >
-        {isHovered && !videoEnded && (
+        {/* { {isHovered && !videoEnded && (
           <>
             <video
               autoPlay
@@ -48,8 +48,8 @@ export default function IntroSlider() {
             </video>
 
             <ReactAudioPlayer src={BgAudio} autoPlay />
-          </>
-        )}
+          </> 
+        )}  */}
 
         <div className="container ontop">
           <div className="row">
