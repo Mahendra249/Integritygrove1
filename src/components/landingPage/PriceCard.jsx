@@ -33,13 +33,13 @@ const Pricecard = (props) => {
         style={{ backgroundImage: `url(${props.backimg})` }}
       >
         <div className="info-box pb-30 bord-thin-bottom mb-30 price-description">
-          <h6 className="sub-title mb-15">Basic Plan</h6>
+          <h6 className="sub-title mb-15">Starts From</h6>
           <div className="amount">
             <div>
               <span className="main-color3 num-font fw-600 fz-50">{props.price}</span>{"Only"}
             </div>
           </div>
-          <p className="fz-13">10% taxes will include after make price.</p>
+          <p className="fz-13">Three Months Service Will be Provided For Free</p>
         </div>
       </div>
     </div>

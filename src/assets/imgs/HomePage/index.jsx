@@ -1,6 +1,6 @@
 // images.js
-import Pricecardback from "./background/p.jpg"
-import IGtech from "./AI/iglogo.png"
+import Pricecardback from "./background/p.jpg";
+import IGtech from "./AI/iglogo.png";
 import LogoImage from "./logo-light.png";
 import HomeSliderBackground from "./background/14.jpg";
 import TestomoImage1 from "./testim/1.jpg";
@@ -55,13 +55,21 @@ import Tech30 from "./freelancer/skills/apache.png";
 import Tech31 from "./freelancer/skills/java.png";
 import StarCircle from "./svg-assets/circle-star.png";
 import Bg1 from "./background/4.jpg";
-import BackgroundImage from "../HomePage/background/p.jpg"
-import BackgroundImage2 from "../HomePage/AI/3.webp"
-import BackgroundImage3 from "../HomePage/background/Computer.webp"
-import lottifile1 from "../HomePage/Lottie/android.json"
-import lottifile2 from "../HomePage/Lottie/app1.json"
-import lottifile3 from "../HomePage/Lottie/web.json"
-import lottifile4 from "../HomePage/Lottie/webb.json"
+import BackgroundImage from "../HomePage/background/p.jpg";
+import BackgroundImage2 from "../HomePage/AI/3.webp";
+import BackgroundImage3 from "../HomePage/background/Computer.webp";
+import lottifile1 from "../HomePage/Lottie/android.json";
+import lottifile2 from "../HomePage/Lottie/app1.json";
+import lottifile3 from "../HomePage/Lottie/web.json";
+import lottifile4 from "../HomePage/Lottie/webb.json";
+import lottifile5 from "../HomePage/Lottie/new.json";
+import lottifile6 from "../HomePage/Lottie/new2.json";
+import lottifile7 from "../HomePage/Lottie/new3.json";
+import lottifile8 from "../HomePage/Lottie/new4.json";
+import lottifile9 from "../HomePage/Lottie/new5.json";
+import lottifile10 from "../HomePage/Lottie/new6.json";
+import lottifile11 from "../HomePage/Lottie/new7.json";
+
 //  import {Video} from "../HomePage/VideoHome/Vg.mp4"
 
 export {
@@ -126,6 +134,13 @@ export {
   lottifile2,
   lottifile3,
   lottifile4,
+  lottifile5,
+  lottifile6,
+  lottifile7,
+  lottifile8,
+  lottifile9,
+  lottifile10,
+  lottifile11,
   IGtech,
   Pricecardback,
   // Video

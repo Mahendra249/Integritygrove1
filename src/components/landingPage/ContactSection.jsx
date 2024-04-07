@@ -31,9 +31,7 @@ const ContactSection = () => {
               <div className="sec-head md-mb80 ">
                 <h6 className="sub-title wow fadeInUp">Get In Touch</h6>
                 <h2 className="fz-50 d-rotate wow">
-                  <span >
-                    Let&apos;s make your brand brilliant!
-                  </span>
+                  <span>Let&apos;s make your brand brilliant!</span>
                 </h2>
                 <p className="fz-15 mt-10">
                   If you would like to work with us or just want to get in
@@ -71,7 +69,7 @@ const ContactSection = () => {
                 <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
                   {/* ... other form fields ... */}
                   <div className="col-lg-12">
-                    <div className="form-group mb-30">
+                    <div className="form-group mb-30 ">
                       <input
                         id="form_name"
                         type="text"
@@ -95,6 +93,7 @@ const ContactSection = () => {
                         placeholder="Email"
                         {...register("email", { onBlur: true })}
                       />
+
                       {errors.email && (
                         <span className="error-message">
                           {errors.email.message}
