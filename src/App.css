@@ -145,7 +145,6 @@
 @media  (min-width: 200px) and   (max-width: 600px) {
    .service-page-container {
     padding: 0px 0px;
-    border: 2px solid red ;
   }
     .service-paragraph-extra {
   margin-inline-start: 0px;
@@ -162,7 +161,6 @@
 @media   (max-width: 400px) {
   .service-page-container {
     padding: 0px 0px;
-    border: 2px solid rgb(30, 255, 0) ;
   }
    .service-heading {
     font-size: 1.5rem;
@@ -178,6 +176,5 @@
 @media (min-width: 992px) {
   .progress-wrap {
     display: none;
-    border: 2px solid red;
   }
 }
