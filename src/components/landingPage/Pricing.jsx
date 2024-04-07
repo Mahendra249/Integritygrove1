@@ -34,7 +34,7 @@ const Pricing = () => {
                 l2={"Satta Matka Game"}
                 l3={" Daman Game"}
                 l4={"Teen Patti Game"}
-                price={"19999₹-"}
+                price={"₹19999-"}
                 backimg={BackgroundImage}
               />
             </Suspense>
@@ -46,7 +46,7 @@ const Pricing = () => {
                 l2={"Dating App (Chat App)"}
                 l3={" Food Delivery App"}
                 l4={"Portfolio Web App"}
-                price={"29999₹-"}
+                price={"₹29999-"}
                 backimg={BackgroundImage3}
               />
             </Suspense>
@@ -58,7 +58,7 @@ const Pricing = () => {
                 l2={"Learning Management System"}
                 l3={" CRM & HRMS System"}
                 l4={"Ecommerce Web App (Multi Vendor and Single Vendor)"}
-                price={"49999₹-"}
+                price={"₹49999-"}
                 backimg={BackgroundImage2}
               />
             </Suspense>
