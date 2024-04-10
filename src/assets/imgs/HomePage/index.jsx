@@ -1,4 +1,5 @@
 // images.js
+import aboutImg3 from '../HomePage/about/2.jpg'
 import Pricecardback from "./background/p.jpg";
 import IGtech from "./AI/iglogo.png";
 import LogoImage from "./logo-light.png";
@@ -69,10 +70,19 @@ import lottifile8 from "../HomePage/Lottie/new4.json";
 import lottifile9 from "../HomePage/Lottie/new5.json";
 import lottifile10 from "../HomePage/Lottie/new6.json";
 import lottifile11 from "../HomePage/Lottie/new7.json";
-
+import teammember1 from "../HomePage/Teammember/jayesh.jpg"
+import teammember2 from "../HomePage/Teammember/daljeet.jpg"
+import teammember3 from "../HomePage/Teammember/Mahendra.jpg"
+import teammember4 from "../HomePage/Teammember/ankit.jpg"
+import TeamEmoji from "../HomePage/about/main.png"
 //  import {Video} from "../HomePage/VideoHome/Vg.mp4"
 
 export {
+  TeamEmoji,
+  teammember1,
+  teammember2,
+  teammember3,
+  teammember4,
   LogoImage,
   HomeSliderBackground,
   TestomoImage1,
@@ -81,6 +91,7 @@ export {
   TestomoImage4,
   aboutImg1,
   aboutImg2,
+  aboutImg3,
   TeamMember,
   Image1,
   icon1,
