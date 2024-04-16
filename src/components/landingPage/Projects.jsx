@@ -6,6 +6,7 @@ import {
   Project4,
   Project5,
 } from "@/assets/imgs/HomePage";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const portfolioItems = [
@@ -15,7 +16,6 @@ const Projects = () => {
       category: "Branding",
       title: "GeekFolio Architecture",
       year: "2024",
-      detailsLink: "project-details1.html",
     },
     {
       id: 2,
@@ -23,7 +23,6 @@ const Projects = () => {
       category: "Branding",
       title: "Luxury Modern Chair",
       year: "2024",
-      detailsLink: "project-details1.html",
     },
     {
       id: 3, // Corrected the id
@@ -31,7 +30,6 @@ const Projects = () => {
       category: "Branding",
       title: "Partiner BPO",
       year: "2024",
-      detailsLink: "project-details1.html",
     },
     {
       id: 4, // Corrected the id
@@ -39,7 +37,6 @@ const Projects = () => {
       category: "Branding",
       title: "From our gallery",
       year: "2024",
-      detailsLink: "project-details1.html",
     },
     {
       id: 5, // Corrected the id
@@ -47,7 +44,6 @@ const Projects = () => {
       category: "Branding",
       title: "Astra Brand Identity",
       year: "2024",
-      detailsLink: "project-details1.html",
     },
     // Add more items as needed
   ];
@@ -77,9 +73,9 @@ const Projects = () => {
                       alt=""
                       className="radius-10"
                     />
-                    <a href={item.detailsLink} className="tag">
+                    <Link to="/service" className="tag">
                       <span>{item.category}</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div

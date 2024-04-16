@@ -79,7 +79,7 @@ export default function Navbar() {
                 <span className="rolling-text">Hire</span>
               </Link>
             </li> */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className="nav-link"
                 to={"/Blog"}
@@ -87,7 +87,7 @@ export default function Navbar() {
               >
                 <span className="rolling-text">Blog</span>
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item dropdown">
               <Link
                 className="nav-link"

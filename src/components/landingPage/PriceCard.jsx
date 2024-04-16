@@ -1,9 +1,8 @@
 import "./landingCss/PriceCard.css";
-import { BackgroundImage} from "../../assets/imgs/HomePage/index";
 const Pricecard = (props) => {
   return (
     <div className="main-cardbox">
-      <div className="card-part1" >
+      <div className="card-part1">
         <ul>
           <li>{props.l1}</li>
           <li>{props.l2}</li>
@@ -36,10 +35,15 @@ const Pricecard = (props) => {
           <h6 className="sub-title mb-15">Starts From</h6>
           <div className="amount">
             <div>
-              <span className="main-color3 num-font fw-600 fz-50">{props.price}</span>{"Only"}
+              <span className="main-color3 num-font fw-600 fz-50">
+                {props.price}
+              </span>
+              {"Only"}
             </div>
           </div>
-          <p className="fz-13">Three Months Service Will be Provided For Free</p>
+          <p className="fz-13">
+            Three Months Service Will be Provided For Free
+          </p>
         </div>
       </div>
     </div>

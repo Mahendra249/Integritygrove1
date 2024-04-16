@@ -15,7 +15,7 @@ const Blog = () => {
             <div className="col-lg-6 d-flex align-items-center">
               <div className="full-width d-flex justify-content-end justify-end">
                 <div className="vew-all">
-                  <a href="blog-list.html">
+                  <a href="">
                     View All Our News
                     <span>
                       <svg
@@ -80,7 +80,7 @@ const Blog = () => {
                     </span>
                     <h5>
                       <a href="blog-details.html">
-                        Business meeting 2023 in San Francisco.
+                        Business meeting 2024 in San Francisco.
                       </a>
                     </h5>
                     <div className="tags colorbg mt-15">

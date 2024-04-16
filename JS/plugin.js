@@ -19964,7 +19964,7 @@ Distributed under the MIT License (license terms are at http://opensource.org/li
  * GSAP 3.11.4
  * https://greensock.com
  *
- * @license Copyright 2022, GreenSock. All rights reserved.
+ * @license Copyright 2024, GreenSock. All rights reserved.
  * Subject to the terms at https://greensock.com/standard-license or for Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
  */

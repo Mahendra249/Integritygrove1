@@ -18,7 +18,7 @@ const ScrollX = () => {
               <h5>Color Integration</h5>
             </div>
             <div className="ml-auto">
-              <h6>2023</h6>
+              <h6>2024</h6>
             </div>
           </div>
           <a href="#0" className="link-overlay" />
@@ -35,7 +35,7 @@ const ScrollX = () => {
               <h5>Mobile Software</h5>
             </div>
             <div className="ml-auto">
-              <h6>2023</h6>
+              <h6>2024</h6>
             </div>
           </div>
           <a href="#0" className="link-overlay" />
@@ -52,7 +52,7 @@ const ScrollX = () => {
               <h5>New Gadgets</h5>
             </div>
             <div className="ml-auto">
-              <h6>2023</h6>
+              <h6>2024</h6>
             </div>
           </div>
           <a href="#0" className="link-overlay" />
@@ -69,7 +69,7 @@ const ScrollX = () => {
               <h5>Digital Platform</h5>
             </div>
             <div className="ml-auto">
-              <h6>2023</h6>
+              <h6>2024</h6>
             </div>
           </div>
           <a href="#0" className="link-overlay" />
@@ -86,7 +86,7 @@ const ScrollX = () => {
               <h5>Branding Process</h5>
             </div>
             <div className="ml-auto">
-              <h6>2023</h6>
+              <h6>2024</h6>
             </div>
           </div>
           <a href="#0" className="link-overlay" />
@@ -107,7 +107,7 @@ const ScrollX = () => {
               <h5>Branding Process</h5>
             </div>
             <div className="ml-auto">
-              <h6>2023</h6>
+              <h6>2024</h6>
             </div>
           </div>
           <a href="#0" className="link-overlay" />

@@ -89,7 +89,7 @@ export default function BlogDetails() {
                       <p>
                         new report said earlier this week that Apple is working
                         on a brand new laptop. Apple plans to release a 15-inch
-                        MacBook Air in 2023, a first for the Air series. A
+                        MacBook Air in 2024, a first for the Air series. A
                         trusted Apple insider with a proven track record
                         confirmed that Apple is working on the larger MacBook
                         Air.
@@ -104,7 +104,7 @@ export default function BlogDetails() {
                         However, Apple might not include it in the Air series
                         when it launches it. As for the notebook’s release date,
                         the 15-inch MacBook isn’t coming soon. It’ll get a late
-                        2023 release at best, according to the new claims.
+                        2024 release at best, according to the new claims.
                       </p>
                     </div>
                     <div className="title mt-30">
@@ -173,7 +173,7 @@ export default function BlogDetails() {
                     <p>
                       A new report said earlier this week that Apple is working
                       on a brand new laptop. Apple plans to release a 15-inch
-                      MacBook Air in 2023, a first for the Air series. A trusted
+                      MacBook Air in 2024, a first for the Air series. A trusted
                       Apple insider with a proven track record confirmed that
                       Apple is working on the larger MacBook Air.
                     </p>
@@ -208,7 +208,7 @@ export default function BlogDetails() {
                     <p>
                       However, Apple might not include it in the Air series when
                       it launches it. As for the notebook’s release date, the
-                      15-inch MacBook isn’t coming soon. It’ll get a late 2023
+                      15-inch MacBook isn’t coming soon. It’ll get a late 2024
                       release at best, according to the new claims.
                     </p>
                   </div>
@@ -360,7 +360,7 @@ export default function BlogDetails() {
                         </span>
                         <h5>
                           <a href="#0">
-                            Business meeting 2023 in San Francisco.
+                            Business meeting 2024 in San Francisco.
                           </a>
                         </h5>
                         <div className="tags colorbg mt-15">

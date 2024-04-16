@@ -1,7 +1,6 @@
 import Projects from "@/components/landingPage/Projects";
 import { Suspense, lazy } from "react";
 
-
 const ProjectDesc = lazy(() => import("@/components/Portfolio/ProjectDesc"));
 
 function ProjectPage() {
@@ -12,13 +11,7 @@ function ProjectPage() {
         <section className="blog-list-half section-padding sub-bg">
           <div className="container">
             <div className="row">
-              {/* <SingleProject />
-              <SingleProject />
-              <SingleProject />
-              <SingleProject />
-              <SingleProject />
-              <SingleProject /> */}
-              <Projects/>
+              <Projects />
             </div>
           </div>
         </section>
@@ -44,7 +37,7 @@ function SingleProject() {
           <div className="col-md-6 main-bg cont valign">
             <div className="full-width">
               <span className="date fz-12 ls1 text-u opacity-7 mb-15">
-                August 6, 2022
+                August 6, 2024
               </span>
               <h5>
                 <a href="blog-details.html">
