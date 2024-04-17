@@ -1,3 +1,4 @@
+import Loader from "@/components/Loader";
 import Projects from "@/components/landingPage/Projects";
 import { Suspense, lazy } from "react";
 
@@ -6,7 +7,7 @@ const ProjectDesc = lazy(() => import("@/components/Portfolio/ProjectDesc"));
 function ProjectPage() {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div><Loader/></div>}>
         <ProjectDesc />
         <section className="blog-list-half section-padding sub-bg">
           <div className="container">
