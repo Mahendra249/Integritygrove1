@@ -1,13 +1,14 @@
 .main-cardbox {
     margin-bottom: 2rem;
-    height: 29rem;
+    height: 28rem;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
     transition: 0.4s;
-  }
+    padding: 3px;
+}
 
-  .card-part2 {
+.Card-part2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,20 +19,23 @@
     background-color: rgb(42, 44, 42);
     position: relative;
     filter: brightness(0.8);
-    
     justify-content: flex-end;
-  }
-  .card-part2 .emoji{
+    transition: 0.4s;
+}
+
+.Card-part2 .emoji {
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-  }
-  .card-part2 img{
+}
+
+.Card-part2 img {
     height: 80%;
-  }
-  .card-part2 .price-description {
+}
+
+.Card-part2 .price-description {
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.712);
     padding: 5px 25px;
@@ -41,14 +45,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .main-cardbox:hover {
-    .card-part2 {
-       background-color: transparent;
-    }
-    .card-part2 .emoji{
-        opacity: 0;
-    }
-  }
-  
+}
+
+.main-cardbox:hover .Card-part2 {
+    background-color: transparent;
+}
+
+.main-cardbox:hover .Card-part2 .emoji {
+    opacity: 0;
+}

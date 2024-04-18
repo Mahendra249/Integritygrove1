@@ -44,8 +44,7 @@ const AboutPage = () => {
                   digital experiences, and print materials that communicate
                   clearly, achieve marketing goals, and look fantastic.We help our clients succeed by creating brand identities,
                   digital experiences, and print materials that communicate
-                  clearly, achieve marketing goals, and look fantastic.
-                </p></div>
+                   </p></div>
           </div>
         </div>
       </header>
@@ -58,7 +57,7 @@ const AboutPage = () => {
             <div className="cont ">
                 <h1 className=" fz-55 mt-4 ">Our Motive</h1>
                 <p className="text-center mt-4">
-                 " GeekFolio are digital marketing experts and can partner with
+                 " IG Tech is Development experts and can partner with
                   you to implement tactical campaigns which engage and connect
                   audiences whilst driving ROI for your brand. We are SEO and
                   SEM professionals and have implemented successful search
