@@ -1,9 +1,10 @@
 import React from "react";
 import "./landingCss/ServicesCard.css";
 import Lottie from "lottie-react";
+
 const ServicesCard = (props) => {
   return (
-    <div>
+    <div className="services-card-wrapper">
       <div className="card">
         <div className="container-card bg-green-box">
           <div className="icon-img-60 mb-40">

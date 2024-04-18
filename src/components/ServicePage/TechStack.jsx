@@ -1,10 +1,9 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import {
   Tech1,
   Tech2,
   Tech3,
   Tech4,
-  Tech5,
   Tech6,
   Tech7,
   Tech8,
@@ -29,8 +28,7 @@ import {
   Tech28,
   Tech29,
   Tech30,
-  Tech31,
-} from "@/assets/imgs/HomePage"; // Make sure to adjust the import path based on your project structure
+} from "@/assets/imgs/HomePage";
 
 const skillsData = [
   { id: 1, name: "React", imageSrc: Tech6 },
@@ -64,6 +62,31 @@ const skillsData = [
 ];
 
 const TechStack = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const getFlexBasis = () => {
+    let itemsPerRow = 6; 
+    if (windowWidth <= 768) {
+      itemsPerRow = 4;
+    }
+    if (windowWidth <= 576) {
+      itemsPerRow = 2;
+    }
+    return `calc(${100 / itemsPerRow}% - 20px)`; 
+  };
+
   return (
     <section
       className="skills-exp section-padding sub-bg"
@@ -76,16 +99,41 @@ const TechStack = () => {
             Tech Stack
           </h2>
         </div>
-        {/* <div className="row"> */}
-        <div className="main-container-tech">
+        <div
+          className="main-container-tech"
+          style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+        >
           {skillsData.map((item) => (
-            <div className="main-child-part">
-              <img loading="lazy" src={item.imageSrc} alt={item.name} />
+            <div
+              className="main-child-part"
+              key={item.id}
+              style={{
+                display: "inline-block",
+                flex: `0 0 ${getFlexBasis()}`,
+                margin: "10px",
+                transition: "transform 0.2s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.transform = "scale(1.1)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.transform = "scale(1)";
+              }}
+            >
+              <img
+                loading="lazy"
+                src={item.imageSrc}
+                alt={item.name}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  transition: "transform 0.2s ease-in-out",
+                }}
+              />
             </div>
           ))}
         </div>
       </div>
-      {/* </div>/ */}
     </section>
   );
 };

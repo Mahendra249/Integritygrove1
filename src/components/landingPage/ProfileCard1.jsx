@@ -21,6 +21,7 @@ const ProfileCard1 = (props) => {
         <div className="info-box pb-30 bord-thin-bottom mb-30 price-description">
           <h6 className="sub-title mb-10">{props.name}</h6>
           <div className="amount"></div>
+          <div className="amount"></div>
           <p className="fz-13">{props.post}</p>
         </div>
       </div>

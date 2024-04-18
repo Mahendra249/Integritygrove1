@@ -14,17 +14,19 @@ function Services() {
     <>
       <section className="serv-box section-padding ">
         <div className="container">
-          <div className="sec-lg-head mb-40 d-flex justify-content-center">
-            <div className="row">
-              <div className="col-lg-12">
-                <h6 className=" mb-10 d-flex justify-content-center">
-                  **Featured Services**
-                </h6>
-                <h2 className="fz-60 fw-700">Our Services</h2>
+          <div className="sec-lg-head mb-80">
+            <div className="row ">
+              <div className="col-lg-8 ">
+                <div className="position-re">
+                  <h6 className="dot-titl colorbg-3 mb-10">
+                    Featured Services
+                  </h6>
+                  <h2 className="fz-60 fw-700">Our Services</h2>
+                </div>
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row equal-height-cards">
             <div className="col-lg-4">
               <ServicesCard
                 title="Android/App Development"

@@ -40,7 +40,7 @@ function LeftProjects() {
                     </span>
                     <h6 className="sub-title tag">
                       <a href="project-details1.html">
-                        © 2023 <br /> Design ART
+                        © 2024 <br /> Design ART
                       </a>
                     </h6>
                     <h5>
@@ -76,7 +76,7 @@ function LeftProjects() {
                     </span>
                     <h6 className="sub-title tag">
                       <a href="project-details1.html">
-                        © 2023 <br /> Design ART
+                        © 2024 <br /> Design ART
                       </a>
                     </h6>
                     <h5>
@@ -112,7 +112,7 @@ function LeftProjects() {
                     </span>
                     <h6 className="sub-title tag">
                       <a href="project-details1.html">
-                        © 2023 <br /> Design ART
+                        © 2024 <br /> Design ART
                       </a>
                     </h6>
                     <h5>
@@ -148,7 +148,7 @@ function LeftProjects() {
                     </span>
                     <h6 className="sub-title tag">
                       <a href="project-details1.html">
-                        © 2023 <br /> Design ART
+                        © 2024 <br /> Design ART
                       </a>
                     </h6>
                     <h5>

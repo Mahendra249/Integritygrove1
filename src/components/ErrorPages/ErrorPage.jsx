@@ -2,7 +2,7 @@ import React from "react";
 
 const ErrorPage = () => {
   return (
-    <section className="error-404 section-padding">
+    <section className="error-404 section-padding mt-12">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-5 col-md-8">
@@ -10,7 +10,12 @@ const ErrorPage = () => {
               <img
                 loading="lazy"
                 src="https://ui-themez.smartinnovates.net/items/geekfolio/dark/assets/imgs/svg-assets/404.svg"
-                alt=""
+                alt="Page not found"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "/iglogo.png";
+                  e.target.alt = "Error 404";
+                }}
               />
             </div>
             <div className="cont text-center">
@@ -20,8 +25,9 @@ const ErrorPage = () => {
                 doesn’t exist on this server.
               </p>
               <a
-                href="#0"
+                href="/"
                 className="butn butn-md main-colorbg3 radius-30 mt-50"
+                aria-label="Back To Homepage"
               >
                 <span className="text-dark fw-600">Back To Homepage</span>
               </a>

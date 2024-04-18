@@ -1,69 +1,43 @@
 import React from "react";
-import { TestomoImage1 } from "../../assets/imgs/HomePage";
+import {
+  TestomoImage1,
+  TestomoImage2,
+  TestomoImage3,
+} from "../../assets/imgs/HomePage";
 
 const Testimonials = () => {
   const reviews = [
     {
-      name: "Leonard Heiser",
+      name: "John Doe",
       title: "CEO",
       reviewText:
         "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
       image: TestomoImage1,
     },
     {
-      name: "Leonard Heiser",
-      title: "CEO",
+      name: "Jane Smith",
+      title: "CTO",
       reviewText:
-        "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-      image: TestomoImage1,
+        "The team at IG Tech Company provided excellent service and exceeded our expectations. Their attention to detail and dedication to delivering high-quality work is truly impressive.",
+      image: TestomoImage2,
     },
     {
-      name: "Leonard Heiser",
-      title: "CEO",
+      name: "Michael Johnson",
+      title: "Founder",
       reviewText:
-        "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-      image: TestomoImage1,
-    },
-    {
-      name: "Leonard Heiser",
-      title: "CEO",
-      reviewText:
-        "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-      image: TestomoImage1,
+        "We've worked with IG Tech Company on multiple projects, and each time they've delivered exceptional results. Their expertise and professionalism make them a valuable partner for any business.",
+      image: TestomoImage3,
     },
   ];
 
   return (
     <>
-      <style>
-        {`
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-          .item {
-            animation: fadeInUp 0.5s ease-in-out forwards;
-          }
-
-          .cont:hover {
-            transform: translateY(-10px);
-            transition: transform 0.5s ease-in-out;
-          }
-        `}
-      </style>
       <section className="testim-vrt sub-bg">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 valign">
               <div className="cont">
-                <h6 className="sub-title mb-15">Since From 2022</h6>
+                <h6 className="sub-title mb-15">Since From 2024</h6>
                 <h3>Keep pushing forward. We've got your back.</h3>
                 <div className="text mt-10 pb-30 bord-thin-bottom">
                   <p>
@@ -109,11 +83,13 @@ function Review({ name, title, reviewText, image }) {
       <div className="cont mb-40">
         <div className="rate-stars mb-30 fz-12">
           <span className="rate main-color">
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
+            {[...Array(5)].map((_, index) => (
+              <i
+                key={index}
+                className="fas fa-star"
+                style={{ color: "gold" }}
+              ></i>
+            ))}
           </span>
         </div>
         <p className="fw-400">{reviewText}</p>

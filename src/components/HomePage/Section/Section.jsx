@@ -44,7 +44,7 @@ const Section = () => {
                 className="vew-all mt-50 ml-30 wow fadeIn"
                 data-wow-delay=".8s"
               >
-                <a href="blog-classic.html">
+                <a href="">
                   View All Our News
                   <span>
                     <svg
